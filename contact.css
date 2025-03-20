@@ -155,3 +155,14 @@ nav:hover{
         padding-left: 0px;
     }
 }
+@keyframes appear{
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 1.5;
+    }
+    100%{
+        scale: 1;
+    }
+}
