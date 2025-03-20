@@ -105,3 +105,40 @@ nav:hover{
     scale: 1.05;
     transition: 0.4s;
 }
+
+@media (max-width:768px){
+    .center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    form{
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    h1{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    nav{
+        margin-bottom: 80px;
+    }
+    .details{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+@media (max-width:600px){
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    li{
+        padding-left: 0px;
+    }
+}

@@ -3,6 +3,13 @@ body{
     color: rgb(243, 247, 5);
     font-family: 'Inter' , Winky-Sans;
 }
+.title{
+    font-size: 100px;
+    text-align: center;
+    color: rgb(3, 255, 226);
+    animation-duration: 3s;
+    animation-name: appear;
+}
 nav{
     background-color: black;
     padding: 10px;
@@ -64,4 +71,38 @@ p{
 .text{
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width:990px){
+    .photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:600px){
+    .title{
+        font-size: 50px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    li{
+        padding-left: 0px;
+    }
+}
+@keyframes appear{
+    0%{
+        scale: 0;
+    }
+    50%{
+        scale: 1.5;
+    }
+    100%{
+        scale: 1;
+    }
 }
