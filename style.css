@@ -74,6 +74,9 @@ p{
 }
 
 @media (max-width:990px){
+    body{
+        text-align: center;
+    }
     .photo{
         display: flex;
         flex-direction: column;
