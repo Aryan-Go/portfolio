@@ -2,6 +2,13 @@ body{
     background-image:linear-gradient(to bottom , #000000 , rgb(4, 11, 72));
     color: rgb(243, 247, 5);
 }
+.title{
+    font-size: 100px;
+    text-align: center;
+    color: rgb(3, 255, 226);
+    animation-duration: 3s;
+    animation-name: appear;
+}
 nav{
     background-color: black;
     padding: 10px;
@@ -134,6 +141,9 @@ nav:hover{
     }
 }
 @media (max-width:600px){
+    .title{
+        font-size: 50px;
+    }
     ul{
         display: flex;
         flex-direction: column;
