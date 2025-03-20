@@ -53,6 +53,7 @@ h1,h2{
     text-shadow: 0px 3px 20px white;
 }
 form{
+    padding: 50px;
     width: 300px;
     text-align: center;
     background-color: #0398dd;
@@ -68,13 +69,16 @@ label{
 }
 input{
     background-color:#0398dd;
+    padding: 10px;
     color: rgb(192, 206, 194);
     border-radius: 10px;
     height: 50px;
+    box-shadow: 0px 2px 20px #01ff8d;
     width: 90%;
     margin: 10px;
 }
 input:hover{
+    box-shadow: 0px 2px 20px #01ff8d;
     background-color: #0385c1;
     scale: 1.05;
     transition: 0.3s;
