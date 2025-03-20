@@ -24,6 +24,7 @@ ul{
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    justify-content: space-around;
 }
 a{
     text-decoration: none;
