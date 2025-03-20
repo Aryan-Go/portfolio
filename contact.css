@@ -1,0 +1,107 @@
+body{
+    background-image:linear-gradient(to bottom , #000000 , rgb(4, 11, 72));
+    color: rgb(243, 247, 5);
+}
+nav{
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0px 2px 20px blue;
+}
+.center{
+    display: flex;;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline wavy white 1px;
+}
+li{
+    padding:10px;
+    padding-left: 15px;
+    font-size: 20px;
+    padding-top:0px;
+    color: rgb(6, 244, 125);;
+}
+li:hover{
+    /* text-decoration: underline wavy red; */
+    /* color: red; */
+    scale: 1.2;
+    text-shadow: 0px 3px 20px white;
+    transition: 0.5s;
+
+    /* transition:1s; */
+}
+h1,h2{
+    color:gold;
+    /* text-align: center; */
+    text-shadow: 0px 3px 20px white;
+}
+form{
+    width: 300px;
+    text-align: center;
+    background-color: #0398dd;
+    border-radius: 20px;
+    box-shadow: 0px 2px 20px white;
+}
+label{
+    color:rgb(56, 225, 0);
+    /* text-align: center; */
+    text-shadow: 0px 3px 20px white;
+    font-size:30px;
+    margin: 10px;
+}
+input{
+    background-color:#0398dd;
+    color: rgb(192, 206, 194);
+    border-radius: 10px;
+    height: 50px;
+    width: 90%;
+    margin: 10px;
+}
+input:hover{
+    background-color: #0385c1;
+    scale: 1.05;
+    transition: 0.3s;
+}
+form:hover{
+    box-shadow: 0px 1px 20px rgb(113, 7, 234);
+    scale: 1.1;
+    transition: 1s;
+}
+
+button{
+    background-color: #04f3eb;
+    color:rgb(7, 173, 54);
+    height: 30px;
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px;
+}
+button:hover{
+    background-color: #05d6cf;
+    scale: 1.1;
+    transition: 0.5s;
+    box-shadow: 0px 2px 20px rgb(2, 198, 2);
+}
+.details{
+    /* color: #8f04f3 */
+    display: flex;
+    flex-direction: row;
+}
+p{
+    width: 25%;
+    margin: 10px;
+}
+nav:hover{
+    scale: 1.05;
+    transition: 0.4s;
+}
