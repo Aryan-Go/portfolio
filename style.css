@@ -68,42 +68,42 @@ li:hover{
 }
 .photo:hover .sds{
     /* position: static; */
-    left: 0;
+    right: 0;
     transition: 1s;
 }
 .photo:hover .tl{
     /* position: static; */
-    left: 0;
+    right: 0;
     transition: 1s;
 }
 .photo:hover .jee{
     /* position: static; */
-    left: 0;
+    right: 0;
     transition: 1s;
 }
 .photo:hover .mira{
     /* position: static; */
-    left: 0;
+    right: 0;
     transition: 1s;
 }
 .photo:hover .paac{
     /* position: static; */
-    left: 0;
+    right: 0;
     transition: 1s;
 }
 .photo:hover .mirify{
     /* position: static; */
-    left: 0;
+    right: 0;
     transition: 1s;
 }
 .photo:hover .mera-safar{
     /* position: static; */
-    left: 0;
+    right: 0;
     transition: 1s;
 }
 .photo:hover .torque{
     /* position: static; */
-    left: 0;
+    right: 0;
     transition: 1s;
 }
 
@@ -142,11 +142,29 @@ p{
     .me{
         left: 0;
     }
-    .tl , .mera-safar , .mira , .mirify , .paac , .sds , .jee , .torque{
-       /* right: 2.5em; */
-       /* position: static; */
-       margin-right: 45em;
-
+    .sds{
+        left: 0;
+    }
+    .tl{
+        left: 0;
+    }
+    .paac{
+        left: 0;
+    }
+    .mira{
+        left: 0;
+    }
+    .mirify{
+        left: 0;
+    }
+    .torque{
+        left: 0;
+    }
+    .mera-safar{
+        left: 0;
+    }
+    .jee{
+        left: 0;
     }
     .photo:hover .sds{
         /* position: static; */
@@ -248,40 +266,40 @@ p{
     height: 400px;
     width: 300px;
     position: relative;
-    right: 21em;
+    right: 27em;
     transition: 1s;
 }
 .jee{
     position: relative;
-    left: 21em;
+    right: 27em;
     transition: 1s;
 }
 .sds{
     height: 100px;
     width: 200px;
     position: relative;
-    left: 21em;
+    right: 27em;
     transition: 1s;
 }
 .tl{
     height: 200px;
     width: 200px;
     position: relative;
-    left: 21em;
+    right: 27em;
     transition: 1s;
 }
 .mira{
     height: 200px;
     width: 150px;
     position: relative;
-    left: 21em;
+    right: 27em;
     transition: 1s;
 }
 .paac{
     height: 250px;
     width: 250px;
     position: relative;
-    left: 21em;
+    right: 27em;
     transition: 1s;
 }
 .fl{
@@ -291,21 +309,21 @@ p{
     height: 200px;
     width: 350px;
     position: relative;
-    left: 21em;
+    right: 27em;
     transition: 1s;
 }
 .torque{
     height: 200px;
     width: 400px;
     position: relative;
-    left: 21em;
+    right: 27em;
     transition: 1s;
 }
 .mera-safar{
     height: 300px;
     width: 400px;
     position: relative;
-    left: 21em;
+    right: 27em;
     transition: 1s;
 }
 .details{
