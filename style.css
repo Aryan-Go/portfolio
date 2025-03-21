@@ -267,40 +267,40 @@ p{
     height: 400px;
     width: 300px;
     position: relative;
-    right: 27em;
+    right: 22em;
     transition: 1s;
 }
 .jee{
     position: relative;
-    right: 27em;
+    right: 20em;
     transition: 1s;
 }
 .sds{
     height: 100px;
     width: 200px;
     position: relative;
-    right: 27em;
+    right: 25em;
     transition: 1s;
 }
 .tl{
     height: 200px;
     width: 200px;
     position: relative;
-    right: 27em;
+    right: 25em;
     transition: 1s;
 }
 .mira{
     height: 200px;
     width: 150px;
     position: relative;
-    right: 27em;
+    right: 26em;
     transition: 1s;
 }
 .paac{
     height: 250px;
     width: 250px;
     position: relative;
-    right: 27em;
+    right: 24em;
     transition: 1s;
 }
 .fl{
@@ -310,21 +310,21 @@ p{
     height: 200px;
     width: 350px;
     position: relative;
-    right: 27em;
+    right: 20em;
     transition: 1s;
 }
 .torque{
     height: 200px;
     width: 400px;
     position: relative;
-    right: 27em;
+    right: 20em;
     transition: 1s;
 }
 .mera-safar{
     height: 300px;
     width: 400px;
     position: relative;
-    right: 27em;
+    right: 20em;
     transition: 1s;
 }
 .details{
@@ -350,4 +350,7 @@ p{
     height: 50px;
     width: 50px;
     margin: 20px;
+}
+img{
+    box-shadow: 0px 2px 50px rgb(2, 154, 255);
 }
