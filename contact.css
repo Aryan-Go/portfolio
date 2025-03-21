@@ -15,7 +15,7 @@ nav{
     box-shadow: 0px 2px 20px blue;
 }
 .center{
-    display: flex;;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100vh;
@@ -57,19 +57,19 @@ form{
     padding: 50px;
     width: 300px;
     text-align: center;
-    background-color: #0398dd;
+    background-color: #000091;
     border-radius: 20px;
     box-shadow: 0px 2px 20px white;
 }
 label{
-    color:rgb(56, 225, 0);
+    color:rgb(238, 168, 4);
     /* text-align: center; */
     text-shadow: 0px 3px 20px white;
     font-size:30px;
     margin: 10px;
 }
 input{
-    background-color:#0398dd;
+    background-color:#000091;
     padding: 10px;
     color: rgb(192, 206, 194);
     border-radius: 10px;
@@ -80,7 +80,7 @@ input{
 }
 input:hover{
     box-shadow: 0px 2px 20px #01ff8d;
-    background-color: #0385c1;
+    background-color: #052bd6;
     scale: 1.05;
     transition: 0.3s;
 }
@@ -91,7 +91,8 @@ form:hover{
 }
 
 button{
-    background-color: #04f3eb;
+    background-color: #000091;
+    border: none;
     color:rgb(7, 173, 54);
     height: 30px;
     width: 50%;
@@ -99,12 +100,15 @@ button{
     margin: 10px;
 }
 button:hover{
-    background-color: #05d6cf;
+    background-color: #052bd6;
     scale: 1.1;
     transition: 0.5s;
-    box-shadow: 0px 2px 20px rgb(2, 198, 2);
+    box-shadow: 0px 2px 20px rgb(226, 251, 8);
 }
 .details{
+    /* background-color: rgb(1, 5, 43); */
+    box-shadow: 0px 2px 20px purple;
+    justify-content: center;
     /* color: #8f04f3 */
     display: flex;
     flex-direction: row;
@@ -141,8 +145,26 @@ nav:hover{
         margin-bottom: 80px;
     }
     .details{
-        flex-direction: column;
-        margin-top: 20px;
+        /* flex-direction: column; */
+        margin-top: 120px;
+    }
+}
+@media (max-width:768px){
+    .jee{
+        padding-top: 5em;
+        /* scale: 0.5; */
+        padding-right: 20em;
+        width: 100%;
+        left: 0;
+        /* padding-left: 20em; */
+    }
+    .center:hover .jee{
+        padding-right: 0;
+        scale: 1;
+    }
+    .center:hover .text{
+        /* height: 200px; */
+        width: 200px;
     }
 }
 @media (max-width:600px){
@@ -159,6 +181,12 @@ nav:hover{
     li{
         padding-left: 0px;
     }
+    
+}
+.github , .linkedin , .insta{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
 }
 @keyframes appear{
     0%{
@@ -170,4 +198,22 @@ nav:hover{
     100%{
         scale: 1;
     }
+}
+.center:hover .jee{
+    /* position: static; */
+    left: 0;
+    transition: 1s;
+}
+.jee{
+    position: relative;
+    left: 10em;
+    transition: 1s;
+}
+.center:hover .text{
+    scale: 1;
+    transition: 1s;
+}
+.text{
+    scale: 0;
+    transition: 1s;
 }

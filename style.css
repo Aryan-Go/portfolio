@@ -57,9 +57,59 @@ li:hover{
     scale: 1.1;
     transition: 1s;
 }
+.photo:hover .text{
+    scale: 1;
+    transition: 1s;
+}
+.photo:hover .me{
+    /* position: static; */
+    right: 0;
+    transition: 1s;
+}
+.photo:hover .sds{
+    /* position: static; */
+    left: 0;
+    transition: 1s;
+}
+.photo:hover .tl{
+    /* position: static; */
+    left: 0;
+    transition: 1s;
+}
+.photo:hover .jee{
+    /* position: static; */
+    left: 0;
+    transition: 1s;
+}
+.photo:hover .mira{
+    /* position: static; */
+    left: 0;
+    transition: 1s;
+}
+.photo:hover .paac{
+    /* position: static; */
+    left: 0;
+    transition: 1s;
+}
+.photo:hover .mirify{
+    /* position: static; */
+    left: 0;
+    transition: 1s;
+}
+.photo:hover .mera-safar{
+    /* position: static; */
+    left: 0;
+    transition: 1s;
+}
+.photo:hover .torque{
+    /* position: static; */
+    left: 0;
+    transition: 1s;
+}
+
 h1,h2{
     color:aqua;
-    /* text-align: center; */
+    text-align: center;
     text-shadow: 0px 3px 20px white;
 }
 .photo{
@@ -69,9 +119,14 @@ h1,h2{
 p{
     margin:10px;
 }
+
 .text{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scale: 0;
+    transition: 1s;
 }
 
 @media (max-width:990px){
@@ -84,8 +139,70 @@ p{
         justify-content: center;
         align-items: center;
     }
+    .me{
+        left: 0;
+    }
+    .tl , .mera-safar , .mira , .mirify , .paac , .sds , .jee , .torque{
+       /* right: 2.5em; */
+       /* position: static; */
+       margin-right: 45em;
+
+    }
+    .photo:hover .sds{
+        /* position: static; */
+        margin-right: 0;
+        transition: 1s;
+    }
+    .photo:hover .tl{
+        /* position: static; */
+        margin-right: 0;
+        transition: 1s;
+    }
+    .photo:hover .jee{
+        /* position: static; */
+        margin-right: 0;
+        transition: 1s;
+    }
+    .photo:hover .mira{
+        /* position: static; */
+        margin-right: 0;
+        transition: 1s;
+    }
+    .photo:hover .paac{
+        /* position: static; */
+        margin-right: 0;
+        transition: 1s;
+    }
+    .photo:hover .mirify{
+        /* position: static; */
+        margin-right: 0;
+        transition: 1s;
+    }
+    .photo:hover .mera-safar{
+        /* position: static; */
+        margin-right: 0;
+        transition: 1s;
+    }
+    .photo:hover .torque{
+        /* position: static; */
+        margin-right: 0;
+        transition: 1s;
+    }
+}
+@media (max-width:768px){
+    .details{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    
 }
 @media (max-width:600px){
+    .mirify{
+        height: 100px;
+        width: 175px;
+        transition: 1s;
+    }
     .title{
         font-size: 50px;
     }
@@ -99,6 +216,106 @@ p{
         padding-left: 0px;
     }
 }
+@media (max-width:500px){
+    .mera-safar{
+        height: 100px;
+        width: 200px;
+    }
+    .photo:hover .mirify{
+        /* position: static; */
+        height: 100px;
+        width: 175px;
+    }
+    .photo:hover .torque{
+        /* position: static; */
+        height: 100px;
+        width: 200px;
+    }
+    .photo:hover .mera-safar{
+        /* position: static; */
+        height: 100px;
+        width: 200px;
+    }
+    .photo:hover .jee{
+        /* position: static; */
+        /* height: 100px; */
+        width: 200px;
+        transition: 1s;
+    }
+    
+}
+.me{
+    height: 400px;
+    width: 300px;
+    position: relative;
+    right: 21em;
+    transition: 1s;
+}
+.jee{
+    position: relative;
+    left: 21em;
+    transition: 1s;
+}
+.sds{
+    height: 100px;
+    width: 200px;
+    position: relative;
+    left: 21em;
+    transition: 1s;
+}
+.tl{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 21em;
+    transition: 1s;
+}
+.mira{
+    height: 200px;
+    width: 150px;
+    position: relative;
+    left: 21em;
+    transition: 1s;
+}
+.paac{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    left: 21em;
+    transition: 1s;
+}
+.fl{
+    padding-left: 0px;
+}
+.mirify{
+    height: 200px;
+    width: 350px;
+    position: relative;
+    left: 21em;
+    transition: 1s;
+}
+.torque{
+    height: 200px;
+    width: 400px;
+    position: relative;
+    left: 21em;
+    transition: 1s;
+}
+.mera-safar{
+    height: 300px;
+    width: 400px;
+    position: relative;
+    left: 21em;
+    transition: 1s;
+}
+.details{
+    /* background-color: rgb(1, 5, 43); */
+    box-shadow: 0px 2px 20px purple;
+    justify-content: center;
+    /* color: #8f04f3 */
+    display: flex;
+    flex-direction: row;
+}
 @keyframes appear{
     0%{
         scale: 0;
@@ -109,4 +326,9 @@ p{
     100%{
         scale: 1;
     }
+}
+.github , .linkedin , .insta{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
 }
