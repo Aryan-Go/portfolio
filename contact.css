@@ -151,9 +151,6 @@ nav:hover{
 }
 @media (max-width:768px){
     .jee{
-        padding-top: 5em;
-        /* scale: 0.5; */
-        padding-right: 20em;
         width: 100%;
         left: 0;
         /* padding-left: 20em; */
@@ -206,7 +203,7 @@ nav:hover{
 }
 .jee{
     position: relative;
-    left: 10em;
+    /* left: 10em; */
     transition: 1s;
 }
 .center:hover .text{
