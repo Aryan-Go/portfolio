@@ -94,6 +94,11 @@ li:hover{
     right: 0;
     transition: 1s;
 }
+.photo:hover #paac2{
+    /* position: static; */
+    right: 0;
+    transition: 1s;
+}
 .photo:hover .mirify{
     /* position: static; */
     right: 0;
@@ -204,6 +209,11 @@ p{
         margin-right: 0;
         transition: 1s;
     }
+    .photo:hover #paac2{
+        /* position: static; */
+        right: 0;
+        transition: 1s;
+    }
     .photo:hover .torque{
         /* position: static; */
         margin-right: 0;
@@ -252,6 +262,11 @@ p{
         height: 100px;
         width: 200px;
     }
+    .photo:hover #paac2{
+        /* position: static; */
+        height: 100px;
+        width: 200px;
+    }
     .photo:hover .mera-safar{
         /* position: static; */
         height: 100px;
@@ -269,40 +284,40 @@ p{
     height: 400px;
     width: 300px;
     position: relative;
-    right: 22em;
+    right: 32%;
     transition: 1s;
 }
 .jee{
     position: relative;
-    right: 20em;
+    right: 70%;
     transition: 1s;
 }
 .sds{
     height: 100px;
     width: 200px;
     position: relative;
-    right: 25em;
+    right: 180%;
     transition: 1s;
 }
 .tl{
     height: 200px;
     width: 200px;
     position: relative;
-    right: 25em;
+    right: 180%;
     transition: 1s;
 }
 .mira{
     height: 200px;
     width: 150px;
     position: relative;
-    right: 26em;
+    right:245%;
     transition: 1s;
 }
 .paac{
     height: 250px;
     width: 250px;
     position: relative;
-    right: 24em;
+    right: 32%;
     transition: 1s;
 }
 .fl{
@@ -312,21 +327,21 @@ p{
     height: 200px;
     width: 350px;
     position: relative;
-    right: 20em;
+    right: 90%;
     transition: 1s;
 }
 .torque{
     height: 200px;
     width: 400px;
     position: relative;
-    right: 20em;
+    right: 70%;
     transition: 1s;
 }
 .mera-safar{
     height: 300px;
     width: 400px;
     position: relative;
-    right: 20em;
+    right: 70%;
     transition: 1s;
 }
 .details{
@@ -364,5 +379,13 @@ img{
     padding: 5px;
     border-radius:50%;
     box-shadow: 0px 2px 20px rgb(2, 154, 255);
+    transition: 1s;
+}
+#paac2{
+    /* right: 150%; */
+    height: 250px;
+    width: 250px;
+    position: relative;
+    right: 150%;
     transition: 1s;
 }
