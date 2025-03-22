@@ -15,14 +15,10 @@ nav {
   margin: 20px;
   /* background-color: rgb(251, 251, 251); */
   padding: 10px;
-  box-shadow: 0px 2px 20px rgb(32, 51, 159);
+  box-shadow: 0px 4px 40px rgb(32, 51, 159);
   border-radius: 10px;
 }
-nav:hover {
-  margin: 30px;
-  scale: 1.05;
-  transition: 0.4s;
-}
+
 ul {
   display: flex;
   flex-direction: row;
@@ -38,7 +34,7 @@ a:hover {
 li {
   padding: 10px;
   padding-left: 15px;
-  font-size: 20px;
+  font-size: 30px;
   padding-top: 0px;
   color: rgb(48, 85, 98);
 }
@@ -124,6 +120,7 @@ h2 {
 }
 .photo {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 p {
@@ -283,7 +280,8 @@ p {
   height: 400px;
   width: 400px;
   position: relative;
-  right: 32%;
+  /* right: 40%; */
+  left: 42%;
   transition: 1s;
   margin: 10px;
 }
@@ -291,28 +289,29 @@ p {
   height: 400px;
   width: 400px;
   position: relative;
-  right: 70%;
+  left: 42%;
   transition: 1s;
 }
 .sds {
   height: 400px;
   width: 400px;
   position: relative;
-  right: 70%;
+  left: 42%;
   transition: 1s;
+  margin: 10px;
 }
 .tl {
   height: 400px;
   width: 400px;
   position: relative;
-  right: 70%;
+  left: 42%;
   transition: 1s;
 }
 .mira {
   height: 400px;
   width: 400px;
   position: relative;
-  right: 70%;
+  left: 42%;
   transition: 1s;
   margin: 10px;
 }
@@ -320,7 +319,7 @@ p {
   height: 400px;
   width: 400px;
   position: relative;
-  right: 28%;
+  left: 42%;
   transition: 1s;
 }
 .fl {
@@ -330,21 +329,21 @@ p {
   height: 400px;
   width: 400px;
   position: relative;
-  right: 70%;
+  left: 42%;
   transition: 1s;
 }
 .torque {
   height: 400px;
   width: 400px;
   position: relative;
-  right: 70%;
+  left: 42%;
   transition: 1s;
 }
 .mera-safar {
   height: 400px;
   width: 400px;
   position: relative;
-  right: 70%;
+  left: 42%;
   transition: 1s;
 }
 .details {
@@ -352,10 +351,11 @@ p {
   box-shadow: 0px 2px 20px purple;
   justify-content: center;
   /* color: #8f04f3 */
-  justify-content: space-around;
+  /* justify-content: space-around; */
   border-radius: 20px;
   display: flex;
   flex-direction: row;
+  
 }
 @keyframes appear {
   0% {
@@ -370,10 +370,18 @@ p {
 }
 .github,
 .linkedin,
-.insta {
+.insta{
   height: 50px;
   width: 50px;
   margin: 20px;
+}
+.gmail {
+  height: 50px;
+  width: 40px;
+  margin: 20px;
+  /* padding: 15px; */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 img {
   box-shadow: 0px 2px 50px rgb(2, 154, 255);
@@ -383,17 +391,19 @@ img {
   box-shadow: none;
 }
 .details img:hover {
-  padding: 5px;
-  border-radius: 50%;
   box-shadow: 0px 2px 20px rgb(2, 154, 255);
   transition: 0.5s;
+  border-radius: 50%;
+  /* padding: 5px; */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #paac2 {
   /* right: 150%; */
   height: 400px;
   width: 400px;
   position: relative;
-  right: 70%;
+  right:55rem;
   transition: 1s;
   margin: 10px;
 }
