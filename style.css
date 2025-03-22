@@ -308,6 +308,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1rem;
   }
   .me {
     left: 0;
@@ -394,6 +395,7 @@ img {
   nav{
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
   }
   ul{
     flex-direction: column;
