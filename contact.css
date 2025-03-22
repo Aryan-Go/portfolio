@@ -1,14 +1,7 @@
 body {
   background-image: linear-gradient(to right, #ffefba, #ffffff);
   color: rgb(137, 138, 50);
-  font-size: 25px;
-}
-.title {
-  font-size: 100px;
-  text-align: center;
-  color: rgb(3, 66, 91);
-  animation-duration: 3s;
-  animation-name: appear;
+  font-size: 2rem;
 }
 .flash {
   box-shadow: none;
@@ -17,11 +10,11 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 2rem;
   /* background-color: rgb(251, 251, 251); */
-  padding: 10px;
+  padding: 1rem;
   box-shadow: 0px 4px 40px rgb(32, 51, 159);
-  border-radius: 10px;
+  border-radius: 2rem;
 }
 .center {
   display: flex;
@@ -30,7 +23,7 @@ nav {
   height: 100vh;
 }
 ul {
-    padding-right: 20px;
+  padding-right: 2rem;
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -39,14 +32,12 @@ ul {
 a {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline wavy white 1px;
-}
+
 li {
-  padding: 20px;
-  padding-left: 15px;
-  font-size: 30px;
-  padding-top: 0px;
+  padding: 1rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  padding-top: 0;
   color: rgb(48, 85, 98);
 }
 li:hover {
@@ -61,44 +52,37 @@ li:hover {
 h1,
 h2 {
   color: rgb(63, 66, 68);
-  /* text-align: center; */
+  text-align: center;
   text-shadow: 0px 2px 20px white;
+  font-size: 2rem;
 }
 form {
-  /* font-size: 50px; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 5rem;
   padding-top: 0;
-  width: 600px;
-  height: 500px;
+  width: 60rem;
+  height: 35rem;
   text-align: center;
   /* background-color: #000091; */
-  border-radius: 10px;
-  box-shadow: 0px 2px 50px rgb(2, 154, 255);
-}
-label {
-  /* font-size: 1000px; */
-  color: rgb(238, 168, 4);
-  /* text-align: center; */
-  text-shadow: 0px 3px 20px white;
-  font-size: 50px;
-  margin: 10px;
+  border-radius: 2rem;
+  box-shadow: 17px 15px 50px rgb(125 196 244);
 }
 input {
   background-image: linear-gradient(to right, #ffefba, #ffffff);
   color: rgb(137, 138, 50);
   /* background-color:#000091; */
-  padding: 10px;
+  padding: 2rem;
   color: rgb(0, 0, 0);
-  border-radius: 10px;
-  height: 50px;
+  border-radius: 2rem;
+  height: 3rem;
   /* box-shadow: 0px 2px 20px #1d4e38; */
   font-size: 20px;
   width: 90%;
-  margin: 10px;
+  margin: 1rem;
 }
 /* form:hover {
   /* box-shadow: 0px 1px 20px rgb(113, 7, 234); */
@@ -109,14 +93,14 @@ input {
 button {
   background-color: #ffe695;
   text-align: center;
-  font-size: 26px;
+  font-size: 1.5rem;
   color: rgb(137, 138, 50);
   border: none;
   color: rgb(6, 114, 131);
-  height: 50px;
-  width: 30%;
-  border-radius: 30px;
-  margin: 10px;
+  height: 4.5rem;
+  width: 20%;
+  border-radius: 2.5rem;
+  margin: 0.5rem;
 }
 button:hover {
   background-color: #fff1c5;
@@ -142,7 +126,7 @@ button:hover {
 }
 p {
   width: 25%;
-  margin: 10px;
+  margin: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -157,19 +141,28 @@ p {
     text-align: center;
   }
   form {
-    margin-top: 20px;
-    margin-bottom: 100px;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    /* height: 200px; */
+    width: 20rem;
+  }
+  button{
+    width: 50%;
   }
   h1 {
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 3.5rem;
+    margin-top: 4rem;
   }
   nav {
-    margin-bottom: 80px;
+    margin-bottom: 7.5rem;
   }
-  .details {
-    /* flex-direction: column; */
-    margin-top: 120px;
+  .details{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .details img{
+    padding: 0;
+    margin: 1rem;
   }
   nav{
     flex-direction: column;
@@ -193,13 +186,10 @@ p {
   }
   .center:hover .text {
     /* height: 200px; */
-    width: 200px;
+    width: 10rem;
   }
 }
 @media (max-width: 600px) {
-  .title {
-    font-size: 50px;
-  }
   /* ul{
         display: flex;
         flex-direction: column;
@@ -208,24 +198,24 @@ p {
         text-align: center;
     } */
   li {
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 .github,
 .linkedin,
 .insta {
-  height: 50px;
-  width: 50px;
-  margin: 20px;
+  height: 4.5rem;
+  width: 4.5rem;
+  margin: 2rem;
 }
 .gmail {
-  height: 50px;
-  width: 40px;
-  margin: 20px;
+  height: 4.5rem;
+  width: 3rem;
+  margin: 2rem;
 }
 .linkedin{
-  width: 61px;
-  margin: 15px;
+  width: 6.1rem;
+  margin: 2rem;
 }
 .details .gmail:hover{
     border-radius: 0;
@@ -248,7 +238,6 @@ p {
 }
 .jee {
   position: relative;
-  /* left: 10em; */
   transition: 1s;
 }
 .center:hover .text {
@@ -263,20 +252,21 @@ p {
   box-shadow: 0px 2px 20px rgb(2, 154, 255);
   transition: 0.5s;
   border-radius: 50%;
-  padding: 5px;
+  padding: 0.5rem;
 }
 .fl {
-  padding-left: 0px;
+  padding-left: 0;
 }
 .send {
-  height: 25px;
-  width: 30px;
+  height: 2.2rem;
+  width: 2.5rem;
+  align-self: center;
 }
 .contact {
   padding-top: 0;
   margin: 0;
 }
 .linkedin:hover{
-  padding-left: 0px;
+  padding-left: 0;
   padding-right: 0;
 }

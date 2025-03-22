@@ -1,15 +1,7 @@
 body {
   background-image: linear-gradient(to right, #ffefba, #ffffff);
   color: rgb(137, 138, 50);
-  font-family: "Inter", Winky-Sans;
-  font-size: 25px;
-}
-.title {
-  font-size: 100px;
-  text-align: center;
-  color: rgb(136, 8, 255);
-  animation-duration: 3s;
-  animation-name: appear;
+  font-size: 2rem;
 }
 .flash {
   box-shadow: none;
@@ -18,16 +10,15 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
-  
+  margin: 2rem;
   /* background-color: rgb(251, 251, 251); */
-  padding: 10px;
+  padding: 1rem;
   box-shadow: 0px 4px 40px rgb(32, 51, 159);
-  border-radius: 10px;
+  border-radius: 2rem;
 }
 
 ul {
-  padding-right: 20px;
+  padding-right: 2rem;
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -40,10 +31,10 @@ a:hover {
   text-decoration: underline wavy white 1px;
 }
 li {
-  padding: 20px;
-  padding-left: 15px;
-  font-size: 30px;
-  padding-top: 0px;
+  padding: 1rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  padding-top: 0;
   color: rgb(48, 85, 98);
 }
 li:hover {
@@ -56,9 +47,9 @@ li:hover {
   /* transition:1s; */
 }
 .photo {
-  margin: 50px;
-  padding: 20px;
-  border-radius: 20px;
+  margin: 5rem;
+  padding:2rem;
+  border-radius: 2rem;
   box-shadow: 10px 10px 47px rgb(221 204 244);
 }
 /* .photo:hover { */
@@ -135,8 +126,8 @@ h2 {
   justify-content: space-around;
 }
 p {
-  margin: 10px;
-  padding: 60px;
+  margin: 1rem;
+  padding: 5rem;
   text-align: center;
 }
 
@@ -148,6 +139,164 @@ p {
   /* scale: 0; */
   color: rgb(6 31 50);
   transition: 1s;
+}
+
+
+  /* .photo:hover .mirify { */
+  /* position: static; */
+  /* height: 100px; */
+  /* width: 175px; */
+  /* } */
+  /* .photo:hover .torque { */
+  /* position: static; */
+  /* height: 100px; */
+  /* width: 200px; */
+  /* } */
+  /* .photo:hover #paac2 { */
+  /* position: static; */
+  /* height: 100px; */
+  /* width: 200px; */
+  /* } */
+  /* .photo:hover .mera-safar { */
+  /* position: static; */
+  /* height: 100px; */
+  /* width: 200px; */
+  /* } */
+  /* .photo:hover .jee { */
+  /* position: static; */
+  /* height: 100px; */
+  /* width: 200px; */
+  /* transition: 1s; */
+  /* } */
+
+.me {
+  height: 20rem;
+  width: 20rem;
+  /* position: relative; */
+  /* right: 40%; */
+  left: 36%;
+  transition: 1s;
+  margin: 10px;
+}
+.jee {
+  height: 20rem;
+  width: 20rem;
+  /* position: relative; */
+  /* left: 36%; */
+  transition: 1s;
+}
+.sds {
+  height: 20rem;
+  width: 20rem;
+  /* position: relative; */
+  /* left: 36%; */
+  transition: 1s;
+  margin: 10px;
+}
+.tl {
+  height: 20rem;
+  width: 20rem;
+  /* position: relative;
+  left: 36%; */
+  transition: 1s;
+}
+.mira {
+  height: 20rem;
+  width: 20rem;
+  /* position: relative;
+  left: 36%; */
+  transition: 1s;
+  margin: 10px;
+}
+.paac {
+  height: 20rem;
+  width: 20rem;
+  /* position: relative;
+  left: 36%; */
+  transition: 1s;
+}
+.fl {
+  padding-left: 0;
+}
+.mirify {
+  height: 20rem;
+  width: 20rem;
+  /* position: relative;
+  left: 36%; */
+  transition: 1s;
+}
+.torque {
+  height: 20rem;
+  width: 20rem;
+  /* position: relative;
+  left: 36%; */
+  transition: 1s;
+}
+.mera-safar {
+  height: 20rem;
+  width: 20rem;
+  /* position: relative;
+  left: 36%; */
+  transition: 1s;
+}
+.details {
+    /* background-color: rgb(1, 5, 43); */
+    /* box-shadow: 0px 2px 20px purple; */
+    justify-content: center;
+    /* color: #8f04f3; */
+    /* justify-content: space-around; */
+    /* border-radius: 20px; */
+    display: flex;
+    border-top: 0.25rem solid #f6d158;
+    flex-direction: row;
+    background-color: #f4dc8c;
+}
+@keyframes appear {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.github,
+.linkedin,
+.insta {
+  height: 4.5rem;
+  width: 4.5rem;
+  margin: 2rem;
+}
+.linkedin{
+  width: 6.1rem;
+  margin: 2rem;
+}
+.details .linkedin:hover{
+  padding:0;
+  /* margin: 0; */
+}
+.details .gmail:hover{
+    border-radius: 0;
+}
+.gmail {
+  height: 4.5rem;
+  width: 3rem;
+  margin: 2rem;
+}
+img {
+  box-shadow: 8px 8px 21px rgb(144 202 241);
+  border-radius: 20px;
+}
+.details img {
+  box-shadow: none;
+}
+.details img:hover {
+  box-shadow: 0px 2px 20px rgb(2, 154, 255);
+  transition: 0.5s;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
 
 @media (max-width: 990px) {
@@ -234,9 +383,13 @@ p {
 /* } */
 /* } */
 @media (max-width: 768px) {
-  .details {
-    flex-direction: column;
-    margin-top: 20px;
+  .details{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .details img{
+    padding: 0;
+    margin: 1rem;
   }
   nav{
     flex-direction: column;
@@ -245,12 +398,26 @@ p {
   ul{
     flex-direction: column;
   }
+  .text{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  .photo{
+    /* margin: 0; */
+    padding: 0;
+  }
+  h1,h2{
+    font-size: 30px;
+  }
 }
 @media (max-width: 600px) {
-  .mirify {
-    height: 100px;
-    width: 175px;
+  .me , .sds , .tl , .mira , .mirify , .jee , .torque , .mera-safar , .paac {
+    height: 4em;
+    width: 6rem;
     transition: 1s;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .title {
     font-size: 50px;
@@ -262,180 +429,6 @@ p {
         align-items: center;
     } */
   li {
-    padding-left: 0px;
+    padding-left: 0;
   }
-}
-@media (max-width: 500px) {
-  .mera-safar {
-    height: 100px;
-    width: 200px;
-  }
-  /* .photo:hover .mirify { */
-  /* position: static; */
-  /* height: 100px; */
-  /* width: 175px; */
-  /* } */
-  /* .photo:hover .torque { */
-  /* position: static; */
-  /* height: 100px; */
-  /* width: 200px; */
-  /* } */
-  /* .photo:hover #paac2 { */
-  /* position: static; */
-  /* height: 100px; */
-  /* width: 200px; */
-  /* } */
-  /* .photo:hover .mera-safar { */
-  /* position: static; */
-  /* height: 100px; */
-  /* width: 200px; */
-  /* } */
-  /* .photo:hover .jee { */
-  /* position: static; */
-  /* height: 100px; */
-  /* width: 200px; */
-  /* transition: 1s; */
-  /* } */
-}
-.me {
-  height: 400px;
-  width: 400px;
-  /* position: relative; */
-  /* right: 40%; */
-  left: 36%;
-  transition: 1s;
-  margin: 10px;
-}
-.jee {
-  height: 400px;
-  width: 400px;
-  /* position: relative; */
-  /* left: 36%; */
-  transition: 1s;
-}
-.sds {
-  height: 400px;
-  width: 400px;
-  /* position: relative; */
-  /* left: 36%; */
-  transition: 1s;
-  margin: 10px;
-}
-.tl {
-  height: 400px;
-  width: 400px;
-  /* position: relative;
-  left: 36%; */
-  transition: 1s;
-}
-.mira {
-  height: 400px;
-  width: 400px;
-  /* position: relative;
-  left: 36%; */
-  transition: 1s;
-  margin: 10px;
-}
-.paac {
-  height: 400px;
-  width: 400px;
-  /* position: relative;
-  left: 36%; */
-  transition: 1s;
-}
-.fl {
-  padding-left: 0px;
-}
-.mirify {
-  height: 400px;
-  width: 400px;
-  /* position: relative;
-  left: 36%; */
-  transition: 1s;
-}
-.torque {
-  height: 400px;
-  width: 400px;
-  /* position: relative;
-  left: 36%; */
-  transition: 1s;
-}
-.mera-safar {
-  height: 400px;
-  width: 400px;
-  /* position: relative;
-  left: 36%; */
-  transition: 1s;
-}
-.details {
-    /* background-color: rgb(1, 5, 43); */
-    /* box-shadow: 0px 2px 20px purple; */
-    justify-content: center;
-    /* color: #8f04f3; */
-    /* justify-content: space-around; */
-    /* border-radius: 20px; */
-    display: flex;
-    border-top: 0.25rem solid #f6d158;
-    flex-direction: row;
-    background-color: #f4dc8c;
-}
-@keyframes appear {
-  0% {
-    scale: 0;
-  }
-  50% {
-    scale: 1.5;
-  }
-  100% {
-    scale: 1;
-  }
-}
-.github,
-.insta {
-  height: 50px;
-  width: 50px;
-  margin: 20px;
-}
-.linkedin{
-  width: 61px;
-  margin: 15px;
-}
-.details .linkedin:hover{
-  padding:0;
-  /* margin: 0; */
-}
-.details .gmail:hover{
-    border-radius: 0;
-}
-.gmail {
-  height: 50px;
-  width: 40px;
-  margin: 20px;
-  /* padding: 15px; */
-  padding-left: 20px;
-  padding-right: 20px;
-}
-img {
-  box-shadow: 8px 8px 21px rgb(144 202 241);
-  border-radius: 20px;
-}
-.details img {
-  box-shadow: none;
-}
-.details img:hover {
-  box-shadow: 0px 2px 20px rgb(2, 154, 255);
-  transition: 0.5s;
-  border-radius: 50%;
-  /* padding: 5px; */
-  padding-left: 10px;
-  padding-right: 10px;
-}
-#paac2 {
-  /* right: 150%; */
-  height: 400px;
-  width: 400px;
-  /* position: relative; */
-  /* right:55rem; */
-  /* transition: 1s; */
-  /* margin: 10px; */
 }
