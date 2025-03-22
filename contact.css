@@ -1,6 +1,7 @@
 body {
   background-image: linear-gradient(to right, #ffefba, #ffffff);
   color: rgb(137, 138, 50);
+  font-size: 25px;
 }
 .title {
   font-size: 100px;
@@ -114,7 +115,8 @@ button:hover {
 .details {
   /* background-color: rgb(1, 5, 43); */
   box-shadow: 0px 2px 20px purple;
-  justify-content: center;
+  justify-content: space-around;
+  border-radius: 20px;
   /* color: #8f04f3 */
   display: flex;
   flex-direction: row;
@@ -224,7 +226,7 @@ nav:hover {
 }
 .details img:hover {
   box-shadow: 0px 2px 20px rgb(2, 154, 255);
-  transition: 1s;
+  transition: 0.5s;
   border-radius: 50%;
   padding: 5px;
 }

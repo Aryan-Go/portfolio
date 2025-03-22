@@ -2,6 +2,7 @@ body {
   background-image: linear-gradient(to right, #ffefba, #ffffff);
   color: rgb(137, 138, 50);
   font-family: "Inter", Winky-Sans;
+  font-size: 25px;
 }
 .title {
   font-size: 100px;
@@ -284,6 +285,7 @@ p {
   position: relative;
   right: 32%;
   transition: 1s;
+  margin: 10px;
 }
 .jee {
   height: 400px;
@@ -312,6 +314,7 @@ p {
   position: relative;
   right: 70%;
   transition: 1s;
+  margin: 10px;
 }
 .paac {
   height: 400px;
@@ -349,6 +352,8 @@ p {
   box-shadow: 0px 2px 20px purple;
   justify-content: center;
   /* color: #8f04f3 */
+  justify-content: space-around;
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
 }
@@ -381,7 +386,7 @@ img {
   padding: 5px;
   border-radius: 50%;
   box-shadow: 0px 2px 20px rgb(2, 154, 255);
-  transition: 1s;
+  transition: 0.5s;
 }
 #paac2 {
   /* right: 150%; */
@@ -390,4 +395,5 @@ img {
   position: relative;
   right: 70%;
   transition: 1s;
+  margin: 10px;
 }
