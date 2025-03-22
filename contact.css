@@ -10,12 +10,18 @@ body {
   animation-duration: 3s;
   animation-name: appear;
 }
+.flash {
+  box-shadow: none;
+  width: 10rem;
+}
 nav {
+  display: flex;
+  justify-content: space-between;
   margin: 20px;
-  /* background-color: black; */
+  /* background-color: rgb(251, 251, 251); */
   padding: 10px;
+  box-shadow: 0px 4px 40px rgb(32, 51, 159);
   border-radius: 10px;
-   box-shadow: 0px 4px 30px rgb(32, 51, 159);
 }
 .center {
   display: flex;
@@ -24,6 +30,7 @@ nav {
   height: 100vh;
 }
 ul {
+    padding-right: 20px;
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -36,7 +43,7 @@ a:hover {
   text-decoration: underline wavy white 1px;
 }
 li {
-  padding: 10px;
+  padding: 20px;
   padding-left: 15px;
   font-size: 30px;
   padding-top: 0px;
@@ -58,7 +65,7 @@ h2 {
   text-shadow: 0px 2px 20px white;
 }
 form {
-    /* font-size: 50px; */
+  /* font-size: 50px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,7 +80,7 @@ form {
   box-shadow: 0px 2px 50px rgb(2, 154, 255);
 }
 label {
-    /* font-size: 1000px; */
+  /* font-size: 1000px; */
   color: rgb(238, 168, 4);
   /* text-align: center; */
   text-shadow: 0px 3px 20px white;
@@ -95,9 +102,9 @@ input {
 }
 /* form:hover {
   /* box-shadow: 0px 1px 20px rgb(113, 7, 234); */
-  /* scale: 1.1;
+/* scale: 1.1;
   transition: 1s; */
-/* } */ 
+/* } */
 
 button {
   background-color: #ffe695;
@@ -119,13 +126,16 @@ button:hover {
   /* box-shadow: 0px 2px 50px rgb(2, 154, 255); */
 }
 .details {
-  /* background-color: rgb(1, 5, 43); */
-  box-shadow: 0px 2px 20px purple;
-  justify-content: center;
-  border-radius: 20px;
-  /* color: #8f04f3 */
-  display: flex;
-  flex-direction: row;
+    /* background-color: rgb(1, 5, 43); */
+    /* box-shadow: 0px 2px 20px purple; */
+    justify-content: center;
+    /* color: #8f04f3; */
+    /* justify-content: space-around; */
+    /* border-radius: 20px; */
+    display: flex;
+    border-top: 0.25rem solid #f6d158;
+    flex-direction: row;
+    background-color: #f4dc8c;
 }
 .details img {
   box-shadow: none;
@@ -194,7 +204,7 @@ p {
 }
 .github,
 .linkedin,
-.insta{
+.insta {
   height: 50px;
   width: 50px;
   margin: 20px;
@@ -203,6 +213,13 @@ p {
   height: 50px;
   width: 40px;
   margin: 20px;
+}
+.linkedin{
+  width: 61px;
+  margin: 15px;
+}
+.details .gmail:hover{
+    border-radius: 0;
 }
 @keyframes appear {
   0% {
@@ -242,11 +259,15 @@ p {
 .fl {
   padding-left: 0px;
 }
-.send{
-    height: 25px;
-    width: 30px;
+.send {
+  height: 25px;
+  width: 30px;
 }
-.contact{
-    padding-top: 0;
-    margin: 0;
+.contact {
+  padding-top: 0;
+  margin: 0;
+}
+.linkedin:hover{
+  padding-left: 0px;
+  padding-right: 0;
 }
