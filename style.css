@@ -48,7 +48,7 @@ li:hover {
 }
 .photo {
   margin: 5rem;
-  padding:2rem;
+  padding: 2rem;
   border-radius: 2rem;
   box-shadow: 10px 10px 47px rgb(221 204 244);
 }
@@ -141,33 +141,32 @@ p {
   transition: 1s;
 }
 
-
-  /* .photo:hover .mirify { */
-  /* position: static; */
-  /* height: 100px; */
-  /* width: 175px; */
-  /* } */
-  /* .photo:hover .torque { */
-  /* position: static; */
-  /* height: 100px; */
-  /* width: 200px; */
-  /* } */
-  /* .photo:hover #paac2 { */
-  /* position: static; */
-  /* height: 100px; */
-  /* width: 200px; */
-  /* } */
-  /* .photo:hover .mera-safar { */
-  /* position: static; */
-  /* height: 100px; */
-  /* width: 200px; */
-  /* } */
-  /* .photo:hover .jee { */
-  /* position: static; */
-  /* height: 100px; */
-  /* width: 200px; */
-  /* transition: 1s; */
-  /* } */
+/* .photo:hover .mirify { */
+/* position: static; */
+/* height: 100px; */
+/* width: 175px; */
+/* } */
+/* .photo:hover .torque { */
+/* position: static; */
+/* height: 100px; */
+/* width: 200px; */
+/* } */
+/* .photo:hover #paac2 { */
+/* position: static; */
+/* height: 100px; */
+/* width: 200px; */
+/* } */
+/* .photo:hover .mera-safar { */
+/* position: static; */
+/* height: 100px; */
+/* width: 200px; */
+/* } */
+/* .photo:hover .jee { */
+/* position: static; */
+/* height: 100px; */
+/* width: 200px; */
+/* transition: 1s; */
+/* } */
 
 .me {
   height: 20rem;
@@ -240,16 +239,16 @@ p {
   transition: 1s;
 }
 .details {
-    /* background-color: rgb(1, 5, 43); */
-    /* box-shadow: 0px 2px 20px purple; */
-    justify-content: center;
-    /* color: #8f04f3; */
-    /* justify-content: space-around; */
-    /* border-radius: 20px; */
-    display: flex;
-    border-top: 0.25rem solid #f6d158;
-    flex-direction: row;
-    background-color: #f4dc8c;
+  /* background-color: rgb(1, 5, 43); */
+  /* box-shadow: 0px 2px 20px purple; */
+  justify-content: center;
+  /* color: #8f04f3; */
+  /* justify-content: space-around; */
+  /* border-radius: 20px; */
+  display: flex;
+  border-top: 0.25rem solid #f6d158;
+  flex-direction: row;
+  background-color: #f4dc8c;
 }
 @keyframes appear {
   0% {
@@ -269,16 +268,16 @@ p {
   width: 4.5rem;
   margin: 2rem;
 }
-.linkedin{
+.linkedin {
   width: 6.1rem;
   margin: 2rem;
 }
-.details .linkedin:hover{
-  padding:0;
+.details .linkedin:hover {
+  padding: 0;
   /* margin: 0; */
 }
-.details .gmail:hover{
-    border-radius: 0;
+.details .gmail:hover {
+  border-radius: 0;
 }
 .gmail {
   height: 4.5rem;
@@ -384,37 +383,46 @@ img {
 /* } */
 /* } */
 @media (max-width: 768px) {
-  .details{
+  .details {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  .details img{
+  .details img {
     padding: 0;
     margin: 1rem;
   }
-  nav{
+  nav {
     flex-direction: column;
     align-items: center;
     margin: 1rem;
   }
-  ul{
+  ul {
     flex-direction: column;
   }
-  .text{
+  .text {
     font-size: 15px;
     padding: 0;
     margin: 1rem;
   }
-  .photo{
+  .photo {
     /* margin: 0; */
     padding: 0;
   }
-  h1,h2{
+  h1,
+  h2 {
     font-size: 30px;
   }
 }
 @media (max-width: 600px) {
-  .me , .sds , .tl , .mira , .mirify , .jee , .torque , .mera-safar , .paac {
+  .me,
+  .sds,
+  .tl,
+  .mira,
+  .mirify,
+  .jee,
+  .torque,
+  .mera-safar,
+  .paac {
     height: 4em;
     width: 10rem;
     transition: 1s;

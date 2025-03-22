@@ -57,7 +57,6 @@ h2 {
   font-size: 2rem;
 }
 form {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,16 +109,16 @@ button:hover {
   /* box-shadow: 0px 2px 50px rgb(2, 154, 255); */
 }
 .details {
-    /* background-color: rgb(1, 5, 43); */
-    /* box-shadow: 0px 2px 20px purple; */
-    justify-content: center;
-    /* color: #8f04f3; */
-    /* justify-content: space-around; */
-    /* border-radius: 20px; */
-    display: flex;
-    border-top: 0.25rem solid #f6d158;
-    flex-direction: row;
-    background-color: #f4dc8c;
+  /* background-color: rgb(1, 5, 43); */
+  /* box-shadow: 0px 2px 20px purple; */
+  justify-content: center;
+  /* color: #8f04f3; */
+  /* justify-content: space-around; */
+  /* border-radius: 20px; */
+  display: flex;
+  border-top: 0.25rem solid #f6d158;
+  flex-direction: row;
+  background-color: #f4dc8c;
 }
 .details img {
   box-shadow: none;
@@ -146,7 +145,7 @@ p {
     /* height: 200px; */
     width: 20rem;
   }
-  button{
+  button {
     width: 50%;
   }
   h1 {
@@ -156,23 +155,22 @@ p {
   nav {
     margin-bottom: 7.5rem;
   }
-  .details{
+  .details {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  .details img{
+  .details img {
     padding: 0;
     margin: 1rem;
   }
-  nav{
+  nav {
     flex-direction: column;
     align-items: center;
   }
-  ul{
+  ul {
     flex-direction: column;
   }
 }
-
 
 @media (max-width: 768px) {
   .jee {
@@ -213,12 +211,12 @@ p {
   width: 3rem;
   margin: 2rem;
 }
-.linkedin{
+.linkedin {
   width: 6.1rem;
   margin: 2rem;
 }
-.details .gmail:hover{
-    border-radius: 0;
+.details .gmail:hover {
+  border-radius: 0;
 }
 @keyframes appear {
   0% {
@@ -266,7 +264,7 @@ p {
   padding-top: 0;
   margin: 0;
 }
-.linkedin:hover{
+.linkedin:hover {
   padding-left: 0;
   padding-right: 0;
 }
