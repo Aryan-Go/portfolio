@@ -1,23 +1,24 @@
 body{
-    background-image:linear-gradient(to bottom , #000000 , rgb(4, 11, 72));
-    color: rgb(243, 247, 5);
+    background-image:linear-gradient(to right, #FFEFBA, #FFFFFF);
+    color: rgb(137, 138, 50);
     font-family: 'Inter' , Winky-Sans;
 }
 .title{
     font-size: 100px;
     text-align: center;
-    color: rgb(5, 165, 228);
+    color: rgb(3, 66, 91);
     animation-duration: 3s;
     animation-name: appear;
 }
 nav{
-    margin: 10px;
-    background-color: black;
+    margin: 20px;
+    /* background-color: rgb(251, 251, 251); */
     padding: 10px;
-    box-shadow: 0px 2px 20px blue;
+    box-shadow: 0px 2px 20px rgb(32, 51, 159);
     border-radius: 10px;
 }
 nav:hover{
+    margin: 30px;
     scale: 1.05;
     transition: 0.4s;
 }
@@ -38,7 +39,7 @@ li{
     padding-left: 15px;
     font-size: 20px;
     padding-top:0px;
-    color: rgb(6, 244, 125);
+    color: rgb(48, 85, 98);
 }
 li:hover{
     /* text-decoration: underline wavy red; */
@@ -49,7 +50,7 @@ li:hover{
 
     /* transition:1s; */
 }
-.photo{
+.photo{ 
     margin: 50px;
     padding: 20px;
     border-radius: 20px;
@@ -110,7 +111,7 @@ li:hover{
 }
 
 h1,h2{
-    color:rgb(6, 179, 253);
+    color:rgb(63, 66, 68);
     text-align: center;
     text-shadow: 0px 2px 10px white;
 }
@@ -358,4 +359,10 @@ img{
 }
 .details img{
     box-shadow: none;
+}
+.details img:hover{
+    padding: 5px;
+    border-radius:50%;
+    box-shadow: 0px 2px 20px rgb(2, 154, 255);
+    transition: 1s;
 }

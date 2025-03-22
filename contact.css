@@ -1,18 +1,19 @@
 body{
-    background-image:linear-gradient(to bottom , #000000 , rgb(4, 11, 72));
-    color: rgb(243, 247, 5);
+    background-image:linear-gradient(to right, #FFEFBA, #FFFFFF);
+    color: rgb(137, 138, 50);
 }
 .title{
     font-size: 100px;
     text-align: center;
-    color: rgb(5, 165, 228);
+    color: rgb(3, 66, 91);
     animation-duration: 3s;
     animation-name: appear;
 }
 nav{
-    margin: 10px;
-    background-color: black;
+    margin: 20px;
+    /* background-color: black; */
     padding: 10px;
+    border-radius: 10px;
     box-shadow: 0px 2px 20px blue;
 }
 .center{
@@ -38,7 +39,7 @@ li{
     padding-left: 15px;
     font-size: 20px;
     padding-top:0px;
-    color: rgb(6, 244, 125);;
+    color: rgb(48, 85, 98);
 }
 li:hover{
     /* text-decoration: underline wavy red; */
@@ -50,7 +51,7 @@ li:hover{
     /* transition:1s; */
 }
 h1,h2{
-    color:gold;
+    color:rgb(63, 66, 68);
     /* text-align: center; */
     text-shadow: 0px 2px 20px white;
 }
@@ -58,9 +59,9 @@ form{
     padding: 50px;
     width: 300px;
     text-align: center;
-    background-color: #000091;
+    /* background-color: #000091; */
     border-radius: 20px;
-    box-shadow: 0px 2px 20px white;
+    box-shadow: 0px 2px 20px rgb(0, 0, 0);
 }
 label{
     color:rgb(238, 168, 4);
@@ -70,17 +71,19 @@ label{
     margin: 10px;
 }
 input{
-    background-color:#000091;
+    background-image:linear-gradient(to right, #FFEFBA, #FFFFFF);
+    color: rgb(137, 138, 50);
+    /* background-color:#000091; */
     padding: 10px;
     color: rgb(192, 206, 194);
     border-radius: 10px;
     height: 50px;
-    box-shadow: 0px 2px 20px #01ff8d;
+    box-shadow: 0px 2px 20px #1d4e38;
     width: 90%;
     margin: 10px;
 }
 input:hover{
-    box-shadow: 0px 2px 20px #01ff8d;
+    box-shadow: 0px 2px 20px #0109ff;
     background-color: #052bd6;
     scale: 1.05;
     transition: 0.3s;
@@ -92,19 +95,20 @@ form:hover{
 }
 
 button{
-    background-color: #000091;
+    background-color:#ffe695;
+    color: rgb(137, 138, 50);
     border: none;
-    color:rgb(7, 173, 54);
+    color:rgb(6, 114, 131);
     height: 30px;
     width: 50%;
     border-radius: 10px;
     margin: 10px;
 }
 button:hover{
-    background-color: #052bd6;
+    background-color: white;
     scale: 1.1;
     transition: 0.5s;
-    box-shadow: 0px 2px 20px rgb(226, 251, 8);
+    box-shadow: 0px 2px 20px rgb(99, 105, 43);
 }
 .details{
     /* background-color: rgb(1, 5, 43); */
@@ -119,6 +123,7 @@ p{
     margin: 10px;
 }
 nav:hover{
+    margin: 30px;
     scale: 1.05;
     transition: 0.4s;
 }
@@ -214,4 +219,10 @@ nav:hover{
 .text{
     scale: 0;
     transition: 1s;
+}
+.details img:hover{
+    box-shadow: 0px 2px 20px rgb(2, 154, 255);
+    transition: 1s;
+    border-radius:50%;
+    padding: 5px;
 }
