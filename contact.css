@@ -13,7 +13,7 @@ nav {
   margin: 2rem;
   /* background-color: rgb(251, 251, 251); */
   padding: 1rem;
-  box-shadow: 0px 4px 40px rgb(32, 51, 159);
+  box-shadow: 0rem 0.25rem 2.5rem rgb(32, 51, 159);
   border-radius: 2rem;
 }
 .center {
@@ -44,7 +44,7 @@ li:hover {
   /* text-decoration: underline wavy red; */
   /* color: red; */
   scale: 1.2;
-  text-shadow: 0px 3px 20px white;
+  text-shadow: 0rem 0.188rem 1.25rem white;
   transition: 0.5s;
 
   /* transition:1s; */
@@ -53,7 +53,7 @@ h1,
 h2 {
   color: rgb(63, 66, 68);
   text-align: center;
-  text-shadow: 0px 2px 20px white;
+  text-shadow: 0rem 0.125rem 1.25rem white;
   font-size: 2rem;
 }
 form {
@@ -68,7 +68,7 @@ form {
   text-align: center;
   /* background-color: #000091; */
   border-radius: 2rem;
-  box-shadow: 17px 15px 50px rgb(125 196 244);
+  box-shadow:1.063rem 0.938rem 3.125rem rgb(125 196 244);
 }
 input {
   background-image: linear-gradient(to right, #ffefba, #ffffff);
@@ -120,15 +120,12 @@ button:hover {
   flex-direction: row;
   background-color: #f4dc8c;
 }
-.details img {
-  box-shadow: none;
-}
 p {
   width: 25%;
   margin: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   body {
     text-align: center;
   }
@@ -153,26 +150,25 @@ p {
     margin-top: 4rem;
   }
   nav {
-    margin-bottom: 7.5rem;
+    margin: 1rem;
+  }
+  li {
+    font-size: 1rem;
+    transition: 1s;
+    /* flex-direction: column; */
   }
   .details {
     padding-left: 4rem;
     padding-right: 4rem;
+    /* margin: 0; */
   }
   .details img {
     padding: 0;
     margin: 1rem;
   }
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  ul {
-    flex-direction: column;
-  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .jee {
     width: 100%;
     left: 0;
@@ -187,7 +183,7 @@ p {
     width: 10rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   /* ul{
         display: flex;
         flex-direction: column;
@@ -201,23 +197,12 @@ p {
 }
 .github,
 .linkedin,
-.insta {
+.insta,.gmail {
   height: 4.5rem;
   width: 4.5rem;
   margin: 2rem;
 }
-.gmail {
-  height: 4.5rem;
-  width: 3rem;
-  margin: 2rem;
-}
-.linkedin {
-  width: 6.1rem;
-  margin: 2rem;
-}
-.details .gmail:hover {
-  border-radius: 0;
-}
+
 @keyframes appear {
   0% {
     scale: 0;
@@ -246,8 +231,8 @@ p {
   scale: 0;
   transition: 1s;
 }
-.details img:hover {
-  box-shadow: 0px 2px 20px rgb(2, 154, 255);
+.details svg:hover {
+  box-shadow: 0rem 0.125rem 1.25rem rgb(2, 154, 255);
   transition: 0.5s;
   border-radius: 50%;
   padding: 0.5rem;
@@ -264,7 +249,21 @@ p {
   padding-top: 0;
   margin: 0;
 }
-.linkedin:hover {
-  padding-left: 0;
-  padding-right: 0;
+
+@media (max-width:31.25rem){
+  li {
+    font-size: 0.7rem;
+    transition: 1s;
+    /* flex-direction: column; */
+  }
+  .flash{
+    width: 6rem;
+  }
+  .github,
+  .linkedin,
+  .insta,.gmail {
+    height: 2.25rem;
+    width: 2.25rem;
+    margin: 2rem;
+  }
 }

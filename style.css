@@ -13,7 +13,7 @@ nav {
   margin: 2rem;
   /* background-color: rgb(251, 251, 251); */
   padding: 1rem;
-  box-shadow: 0px 4px 40px rgb(32, 51, 159);
+  box-shadow: 0rem 0.25rem 2.5rem rgb(32, 51, 159);
   border-radius: 2rem;
 }
 
@@ -124,6 +124,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 p {
   margin: 1rem;
@@ -169,8 +170,8 @@ p {
 /* } */
 
 .me {
-  height: 20rem;
-  width: 20rem;
+  /* height: 20rem; */
+  width: 26rem;
   /* position: relative; */
   /* right: 40%; */
   left: 36%;
@@ -179,18 +180,21 @@ p {
 }
 .jee {
   height: 20rem;
-  width: 20rem;
+  width: 32rem;
   /* position: relative; */
   /* left: 36%; */
   transition: 1s;
 }
 .sds {
-  height: 20rem;
-  width: 20rem;
+  /* margin-top: 20rem; */
+  /* align-self: center; */
+  /* height: 20rem; */
+  width: 32rem;
   /* position: relative; */
   /* left: 36%; */
   transition: 1s;
-  margin: 10px;
+  margin: 0.625rem;
+  margin-top: 4rem;
 }
 .tl {
   height: 20rem;
@@ -200,8 +204,8 @@ p {
   transition: 1s;
 }
 .mira {
-  height: 20rem;
-  width: 20rem;
+  height: 29rem;
+  width: 21rem;
   /* position: relative;
   left: 36%; */
   transition: 1s;
@@ -219,7 +223,7 @@ p {
 }
 .mirify {
   height: 20rem;
-  width: 20rem;
+  width: 28rem;
   /* position: relative;
   left: 36%; */
   transition: 1s;
@@ -233,7 +237,7 @@ p {
 }
 .mera-safar {
   height: 20rem;
-  width: 20rem;
+  width: 32rem;
   /* position: relative;
   left: 36%; */
   transition: 1s;
@@ -263,35 +267,19 @@ p {
 }
 .github,
 .linkedin,
-.insta {
+.insta,.gmail {
   height: 4.5rem;
   width: 4.5rem;
   margin: 2rem;
 }
-.linkedin {
-  width: 6.1rem;
-  margin: 2rem;
-}
-.details .linkedin:hover {
-  padding: 0;
-  /* margin: 0; */
-}
-.details .gmail:hover {
-  border-radius: 0;
-}
-.gmail {
-  height: 4.5rem;
-  width: 3rem;
-  margin: 2rem;
-}
+
+
 img {
   box-shadow: 8px 8px 21px rgb(144 202 241);
   border-radius: 20px;
 }
-.details img {
-  box-shadow: none;
-}
-.details img:hover {
+
+.details svg:hover {
   box-shadow: 0px 2px 20px rgb(2, 154, 255);
   transition: 0.5s;
   border-radius: 50%;
@@ -382,7 +370,7 @@ img {
 /* transition: 1s; */
 /* } */
 /* } */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .details {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -392,15 +380,15 @@ img {
     margin: 1rem;
   }
   nav {
-    flex-direction: column;
-    align-items: center;
     margin: 1rem;
   }
-  ul {
-    flex-direction: column;
+  li {
+    font-size: 1rem;
+    transition: 1s;
+    /* flex-direction: column; */
   }
   .text {
-    font-size: 15px;
+    font-size: 0.938;
     padding: 0;
     margin: 1rem;
   }
@@ -410,10 +398,10 @@ img {
   }
   h1,
   h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .me,
   .sds,
   .tl,
@@ -429,9 +417,7 @@ img {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .title {
-    font-size: 50px;
-  }
+ 
   /* ul{
         display: flex;
         flex-direction: column;
@@ -444,4 +430,21 @@ img {
 }
 .bold {
   font-weight: bold;
+}
+@media (max-width:31.25rem){
+  .github,
+  .linkedin,
+  .insta,.gmail {
+    height: 2.25rem;
+    width: 2.25rem;
+    margin: 2rem;
+  }
+  .flash{
+    width: 6rem;
+  }
+   li {
+    font-size: 0.7rem;
+    transition: 1s;
+    /* flex-direction: column; */
+  }
 }
