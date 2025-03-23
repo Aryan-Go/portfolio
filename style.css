@@ -402,17 +402,38 @@ img {
   }
 }
 @media (max-width: 37.5rem) {
-  .me,
-  .sds,
   .tl,
-  .mira,
-  .mirify,
-  .jee,
   .torque,
-  .mera-safar,
   .paac {
     height: 4em;
     width: 10rem;
+    transition: 1s;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .sds{
+    height: 4em;
+    width: 20rem;
+    transition: 1s;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mira{
+    height: 10em;
+    width: 12rem;
+    transition: 1s;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .me{
+    height: 30rem;
+    transition: 1s;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mirify , .jee , .mera-safar{
+    height: 4em;
+    width: 15rem;
     transition: 1s;
     margin-top: 1rem;
     margin-bottom: 1rem;
