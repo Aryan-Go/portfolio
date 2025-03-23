@@ -247,6 +247,9 @@ p {
   /* background-color: rgb(1, 5, 43); */
   /* box-shadow: 0px 2px 20px purple; */
   justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   /* color: #8f04f3; */
   /* justify-content: space-around; */
   /* border-radius: 20px; */
@@ -267,10 +270,14 @@ p {
   }
 }
 .github,
-.linkedin,
 .insta,.gmail {
   height: 4.5rem;
   width: 4.5rem;
+  margin: 2rem;
+}
+.linkedin{
+  height: 4rem;
+  width: 4rem;
   margin: 2rem;
 }
 
@@ -372,10 +379,6 @@ img {
 /* } */
 /* } */
 @media (max-width: 48rem) {
-  .details img {
-    padding: 0;
-    margin: 1rem;
-  }
   nav {
     margin: 1rem;
     
@@ -402,6 +405,11 @@ img {
   }
 }
 @media (max-width: 37.5rem) {
+  .details{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .tl {
     height: 4em;
     width: 10rem;
@@ -424,8 +432,8 @@ img {
     margin-bottom: 1rem;
   }
   .me{
-    height: 25rem;
-    width: 20rem;
+    height: 20rem;
+    width: 15rem;
     transition: 1s;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -453,12 +461,15 @@ img {
   font-weight: bold;
 }
 @media (max-width:31.25rem){
+  body{
+    font-size: 1.5rem;
+  }
   .github,
   .linkedin,
   .insta,.gmail {
     height: 2.25rem;
     width: 2.25rem;
-    margin: 2rem;
+    margin: 1rem;
   }
   .flash{
     width: 6rem;

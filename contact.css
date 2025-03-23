@@ -196,10 +196,14 @@ p {
   }
 }
 .github,
-.linkedin,
 .insta,.gmail {
   height: 4.5rem;
   width: 4.5rem;
+  margin: 2rem;
+}
+.linkedin{
+  height: 4rem;
+  width: 4rem;
   margin: 2rem;
 }
 
@@ -265,6 +269,6 @@ p {
   .insta,.gmail {
     height: 2.25rem;
     width: 2.25rem;
-    margin: 2rem;
+    margin: 1rem;
   }
 }
