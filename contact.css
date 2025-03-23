@@ -157,11 +157,6 @@ p {
     transition: 1s;
     /* flex-direction: column; */
   }
-  .details {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    /* margin: 0; */
-  }
   .details img {
     padding: 0;
     margin: 1rem;
