@@ -202,11 +202,13 @@ p {
   height: 4.5rem;
   width: 4.5rem;
   margin: 2rem;
+  transition: 1s;
 }
 .linkedin{
   height: 4rem;
   width: 4rem;
   margin: 2rem;
+  transition: 1s;
 }
 
 @keyframes appear {
@@ -282,5 +284,10 @@ p {
     height: 2.25rem;
     width: 2.25rem;
     margin: 1rem;
+    transition: 1s;
+  }
+  button{
+    height: 9rem;
+    width: 8rem;
   }
 }
