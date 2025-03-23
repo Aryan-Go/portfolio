@@ -402,9 +402,7 @@ img {
   }
 }
 @media (max-width: 37.5rem) {
-  .tl,
-  .torque,
-  .paac {
+  .tl {
     height: 4em;
     width: 10rem;
     transition: 1s;
@@ -432,7 +430,8 @@ img {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .mirify , .jee , .mera-safar{
+  .mirify , .jee , .mera-safar , .torque,
+  .paac{
     height: 4em;
     width: 15rem;
     transition: 1s;
