@@ -55,6 +55,8 @@ h2 {
   text-align: center;
   text-shadow: 0rem 0.125rem 1.25rem white;
   font-size: 2rem;
+  animation: appear;
+  animation-duration: 2s;
 }
 form {
   display: flex;
@@ -105,6 +107,8 @@ button:hover {
   background-color: #fff1c5;
   /* scale: 1.1; */
   transition: 0.5s;
+  animation: appear;
+  animation-duration: 2s;
 
   /* box-shadow: 0px 2px 50px rgb(2, 154, 255); */
 }
@@ -119,6 +123,8 @@ button:hover {
   border-top: 0.25rem solid #f6d158;
   flex-direction: row;
   background-color: #f4dc8c;
+  margin: 0;
+  width: 100%;
 }
 p {
   width: 25%;
@@ -156,10 +162,6 @@ p {
     font-size: 1rem;
     transition: 1s;
     /* flex-direction: column; */
-  }
-  .details img {
-    padding: 0;
-    margin: 1rem;
   }
 }
 
@@ -200,9 +202,6 @@ p {
   width: 4.5rem;
   margin: 2rem;
 }
-form{
-
-}
 
 @keyframes appear {
   0% {
@@ -231,6 +230,7 @@ form{
 .text {
   scale: 0;
   transition: 1s;
+  font-size: 1.3rem;
 }
 .details svg:hover {
   box-shadow: 0rem 0.125rem 1.25rem rgb(2, 154, 255);
