@@ -189,6 +189,9 @@ p {
   li {
     padding-left: 0;
   }
+  form{
+    width: 18rem;
+  }
 }
 .github,
 .linkedin,
@@ -196,6 +199,9 @@ p {
   height: 4.5rem;
   width: 4.5rem;
   margin: 2rem;
+}
+form{
+
 }
 
 @keyframes appear {
