@@ -263,7 +263,7 @@ p {
     scale: 0;
   }
   50% {
-    scale: 1.5;
+    scale: 1.2;
   }
   100% {
     scale: 1;
@@ -461,6 +461,13 @@ img {
   font-weight: bold;
 }
 @media (max-width:31.25rem){
+    .sds {
+        height: 4em;
+        width: 14rem;
+        transition: 1s;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
   body{
     font-size: 1.5rem;
   }
@@ -472,10 +479,10 @@ img {
     margin: 1rem;
   }
   .flash{
-    width: 6rem;
+    width: 5rem;
   }
    li {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     transition: 1s;
     /* flex-direction: column; */
   }

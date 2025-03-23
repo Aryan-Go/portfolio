@@ -256,13 +256,16 @@ p {
 }
 
 @media (max-width:31.25rem){
+  form {
+        width: 12rem;
+  }
   li {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     transition: 1s;
     /* flex-direction: column; */
   }
   .flash{
-    width: 6rem;
+    width: 5rem;
   }
   .github,
   .linkedin,
