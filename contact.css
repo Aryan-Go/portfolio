@@ -1,12 +1,9 @@
-
 .center {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
 }
-
-
 
 form {
   display: flex;
@@ -101,10 +98,6 @@ button:hover {
   transition: 1s;
 }
 
-
-.fl {
-  padding-left: 0;
-}
 .send {
   height: 1.5rem;
   width: 2rem;
