@@ -8,6 +8,11 @@ body {
   box-shadow: none;
   width: 10rem;
 }
+.photo img:hover{
+  box-shadow: 0.5rem 0.5rem 1.313rem rgb(144 202 241);
+  /* animation: appear; */
+  transition: 0.5s;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -76,12 +81,21 @@ li:hover {
 h1,
 h2 {
   color: rgb(6 31 50);
-
+  margin-left: 0rem;
   text-align: center;
   text-shadow: 0 0.125rem 0.625rem white;
   font-size: 2rem;
   animation: appear;
   animation-duration: 2s;
+}
+.hh{
+  color: rgb(6 31 50);
+  text-align: center;
+  text-shadow: 0 0.125rem 0.625rem white;
+  font-size: 2rem;
+  animation: appear;
+  animation-duration: 2s;
+  margin-left: 1rem;
 }
 .photo {
   display: flex;
@@ -231,7 +245,6 @@ p {
 }
 
 img {
-  box-shadow: 0.5rem 0.5rem 1.313rem rgb(144 202 241);
   border-radius: 1.25rem;
 }
 
