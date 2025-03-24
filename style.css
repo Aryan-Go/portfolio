@@ -19,21 +19,20 @@ nav {
   border-radius: 2rem;
 }
 nav .hamburger-lay .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    justify-content: end;
-
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: end;
 }
-nav .hamburger-lay input{
+nav .hamburger-lay input {
   visibility: hidden;
 }
 
 nav .hamburger-lay .hamburger .bar {
-    width: 25px;
-    height: 3px;
-    margin: 4px 0;
-    background-color: rgb(0, 0, 0);
+  width: 1.563rem;
+  height: 0.188rem;
+  margin: 0.25rem 0;
+  background-color: rgb(0, 0, 0);
 }
 ul {
   transition-delay: 2s;
@@ -47,10 +46,10 @@ ul {
   transition: 0.5s;
   /* overflow: hidden; */
   /* max-height: 0; */
-  
+
   /* visibility: hidden; */
 }
-nav{
+nav {
   align-items: center;
   text-align: start;
 }
@@ -299,33 +298,41 @@ p {
     scale: 1;
   }
 }
-@keyframes navcome{
-  0%{
+@keyframes navcome {
+  0% {
     display: none;
   }
-  100%{
+  100% {
     display: flex;
   }
 }
 .github,
-.insta,.gmail {
+.insta {
   height: 4.5rem;
   width: 4.5rem;
   margin: 2rem;
 }
-.linkedin{
-  height: 4rem;
-  width: 4rem;
+.gmail {
+  height: 5rem;
+  width: 4.5rem;
   margin: 2rem;
 }
 
+.linkedin {
+  height: 5rem;
+  width: 4rem;
+  margin: 2rem;
+}
+.details img {
+  box-shadow: none;
+}
 
 img {
   box-shadow: 0.5rem 0.5rem 1.313rem rgb(144 202 241);
   border-radius: 1.25rem;
 }
 
-.details svg:hover {
+.details img:hover {
   box-shadow: 0 0.125rem 1.25rem rgb(2, 154, 255);
   transition: 0.5s;
   border-radius: 50%;
@@ -417,35 +424,34 @@ img {
 /* } */
 /* } */
 @media (max-width: 48rem) {
-  nav{
+  nav {
     align-items: center;
   }
   nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem;
-  /* background-color: rgb(251, 251, 251); */
-  padding: 1rem;
-  box-shadow: 0rem 0.25rem 2.5rem rgb(32, 51, 159);
-  border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    /* background-color: rgb(251, 251, 251); */
+    padding: 1rem;
+    box-shadow: 0rem 0.25rem 2.5rem rgb(32, 51, 159);
+    border-radius: 2rem;
   }
   nav .hamburger-lay .hamburger {
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-      justify-content: end;
-
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: end;
   }
-  nav .hamburger-lay input{
+  nav .hamburger-lay input {
     visibility: hidden;
   }
 
   nav .hamburger-lay .hamburger .bar {
-      width: 25px;
-      height: 3px;
-      margin: 4px 0;
-      background-color: rgb(0, 0, 0);
+    width: 1.563rem;
+    height: 0.188rem;
+    margin: 0.25rem 0;
+    background-color: rgb(0, 0, 0);
   }
   ul {
     transition-delay: 2s;
@@ -459,14 +465,14 @@ img {
     transition: 0.5s;
     /* overflow: hidden; */
     max-height: 0;
-    
+
     /* visibility: hidden; */
   }
-  nav{
+  nav {
     align-items: center;
     text-align: start;
   }
-  .hamburger-lay #menu-toggle:checked~ul{
+  .hamburger-lay #menu-toggle:checked ~ ul {
     transition: 0.5s;
     scale: 1;
     max-height: 100%;
@@ -474,7 +480,6 @@ img {
 
   nav {
     margin: 1rem;
-    
   }
   .text {
     font-size: 0.938;
@@ -493,7 +498,7 @@ img {
   }
 }
 @media (max-width: 37.5rem) {
-  .details{
+  .details {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -505,36 +510,39 @@ img {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .sds{
+  .sds {
     height: 4em;
     width: 20rem;
     transition: 1s;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .mira{
+  .mira {
     height: 10em;
     width: 12rem;
     transition: 1s;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .me{
+  .me {
     height: 20rem;
     width: 15rem;
     transition: 1s;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .mirify , .jee , .mera-safar , .torque,
-  .paac{
+  .mirify,
+  .jee,
+  .mera-safar,
+  .torque,
+  .paac {
     height: 4em;
     width: 15rem;
     transition: 1s;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
- 
+
   /* ul{
         display: flex;
         flex-direction: column;
@@ -548,28 +556,29 @@ img {
 .bold {
   font-weight: bold;
 }
-@media (max-width:31.25rem){
-    .sds {
-        height: 4em;
-        width: 14rem;
-        transition: 1s;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-  body{
+@media (max-width: 31.25rem) {
+  .sds {
+    height: 4em;
+    width: 14rem;
+    transition: 1s;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  body {
     font-size: 1.5rem;
   }
   .github,
   .linkedin,
-  .insta,.gmail {
+  .insta,
+  .gmail {
     height: 2.25rem;
     width: 2.25rem;
     margin: 1rem;
   }
-  .flash{
+  .flash {
     width: 5rem;
   }
-   li {
+  li {
     font-size: 1.5rem;
     transition: 1s;
     /* flex-direction: column; */
