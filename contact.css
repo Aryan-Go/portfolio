@@ -10,15 +10,15 @@ body {
 }
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: start;
+  justify-content: space-around;
+  align-items: flex-start;
   margin: 2rem;
   box-shadow: 0rem 0.25rem 2.5rem rgb(32, 51, 159);
   border-radius: 2rem;
 }
 nav .hamburger-lay{
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 nav .hamburger-lay .hamburger {
   display: none;
