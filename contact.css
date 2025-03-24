@@ -10,7 +10,7 @@ body {
 }
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   margin: 2rem;
   box-shadow: 0rem 0.25rem 2.5rem rgb(32, 51, 159);
