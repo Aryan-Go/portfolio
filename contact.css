@@ -30,6 +30,9 @@ input {
   width: 90%;
   margin: 1rem;
 }
+.tr{
+    margin-left: -1rem;
+  }
 
 button {
   background-color: #ffe695;
