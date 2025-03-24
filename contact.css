@@ -73,6 +73,9 @@ button:hover {
 }
 
 @media (max-width: 48rem) {
+  .tr{
+    margin-left: -1rem;
+  }
   .center:hover .jee {
     padding-right: 0;
     scale: 1;
@@ -109,7 +112,6 @@ button:hover {
 }
 
 @media (max-width: 31.25rem) {
-  
   .contact {
     margin-top: 14vh;
   }
