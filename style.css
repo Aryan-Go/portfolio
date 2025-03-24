@@ -10,7 +10,8 @@ body {
 }
 .photo img:hover{
   box-shadow: 0.5rem 0.5rem 1.313rem rgb(144 202 241);
-  /* animation: appear; */
+  animation: blurtech;
+  animation-duration: 1s;
   transition: 0.5s;
 }
 nav {
@@ -243,8 +244,11 @@ p {
 .details img {
   box-shadow: none;
 }
-
+.flash{
+  filter: none;
+}
 img {
+  /* filter:blur(1rem); */
   border-radius: 1.25rem;
 }
 
@@ -253,6 +257,14 @@ img {
   transition: 0.5s;
   border-radius: 50%;
   padding: 0.5rem;
+}
+@keyframes blurtech {
+  0%{
+    filter:blur(1rem);
+  }
+  100%{
+    filter: blur(0rem);
+  }
 }
 
 @media (max-width: 61.875rem) {
