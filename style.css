@@ -20,12 +20,13 @@ nav {
 }
 nav .hamburger-lay{
   display: flex;
+  justify-content: start;
 }
 nav .hamburger-lay .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  justify-content: end;
+  justify-content: start;
 }
 nav .hamburger-lay input {
   visibility: hidden;
@@ -447,12 +448,15 @@ img {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    justify-content: end;
+    justify-content: start;
   }
   nav .hamburger-lay input {
     visibility: hidden;
   }
-
+  nav .hamburger-lay{
+  display: flex;
+  justify-content: space-between;
+  }
   nav .hamburger-lay .hamburger .bar {
     width: 1.563rem;
     height: 0.188rem;
@@ -585,7 +589,7 @@ img {
     width: 5rem;
   }
   li {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     transition: 1s;
     /* flex-direction: column; */
   }

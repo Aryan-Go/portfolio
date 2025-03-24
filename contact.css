@@ -20,12 +20,13 @@ nav {
 }
 nav .hamburger-lay{
   display: flex;
+  justify-content: start;
 }
 nav .hamburger-lay .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  justify-content: end;
+  justify-content: start;
 }
 nav .hamburger-lay input {
   visibility: hidden;
@@ -100,7 +101,7 @@ form {
   align-items: center;
   padding: 5rem;
   padding-top: 0;
-  width: 80vh;
+  width: 70%;
   height: 70vh;
   text-align: center;
   /* background-color: #000091; */
@@ -183,11 +184,15 @@ p {
     box-shadow: 0rem 0.25rem 2.5rem rgb(32, 51, 159);
     border-radius: 2rem;
   }
+  nav .hamburger-lay{
+  display: flex;
+  justify-content: space-between;
+  }
   nav .hamburger-lay .hamburger {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    justify-content: end;
+    justify-content: start;
   }
   nav .hamburger-lay input {
     visibility: hidden;
@@ -201,6 +206,7 @@ p {
   }
   li{
     padding-bottom: 1rem;
+    margin-left: 2rem;
   }
   ul {
     transition-delay: 2s;
@@ -238,7 +244,7 @@ p {
     margin-top: 3rem;
     margin-bottom: 4rem;
     /* height: 200px; */
-    width: 20rem;
+    /* width: 20rem; */
   }
   button {
     width: 50%;
@@ -279,7 +285,9 @@ p {
     padding-left: 0;
   }
   form {
-    width: 18rem;
+    width: 65%;
+    height: 70vh;
+    transition: 1s;
   }
 }
 .github,
@@ -357,10 +365,7 @@ p {
 }
 
 @media (max-width: 31.25rem) {
-  form {
-    width: 17vh;
-    height: 70vh;
-  }
+  
   .contact {
     margin-top: 14vh;
   }
@@ -385,8 +390,21 @@ p {
     width: 8rem;
   }
   li {
-    font-size: 1.5rem;
+    font-size: 0.88rem;
     transition: 1s;
     /* flex-direction: column; */
+  }
+  nav {
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+  nav .hamburger-lay{
+    display: flex;
+    justify-content: start;
+  }
+  form{
+    transition: 1s;
+    height: 60%;
+    width: 58%;
   }
 }
