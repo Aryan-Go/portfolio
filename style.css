@@ -16,7 +16,7 @@ nav {
   box-shadow: 0rem 0.25rem 2.5rem rgb(32, 51, 159);
   border-radius: 2rem;
 }
-nav .hamburger-lay{
+nav .hamburger-lay {
   display: flex;
   justify-content: start;
 }
@@ -92,10 +92,9 @@ h2 {
 p {
   margin: 2rem;
   /* padding: 5rem; */
-  text-align: left
-  ;
+  text-align: left;
 }
-.text h1{
+.text h1 {
   margin-left: 1rem;
 }
 
@@ -107,6 +106,27 @@ p {
   font-size: 1.3rem;
   color: rgb(6 31 50);
   transition: 1s;
+}
+
+.nov {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+  color: rgb(6 31 50);
+  transition: 1s;
+  margin-left: 0;
+}
+.nov2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+  color: rgb(6 31 50);
+  transition: 1s;
+  margin-left: 1rem;
 }
 
 .me {
@@ -274,7 +294,7 @@ img {
     box-shadow: 0rem 0.25rem 2.5rem rgb(32, 51, 159);
     border-radius: 2rem;
   }
-  li{
+  li {
     padding-bottom: 1rem;
   }
   nav .hamburger-lay .hamburger {
@@ -286,9 +306,9 @@ img {
   nav .hamburger-lay input {
     visibility: hidden;
   }
-  nav .hamburger-lay{
-  display: flex;
-  justify-content: space-between;
+  nav .hamburger-lay {
+    display: flex;
+    justify-content: space-between;
   }
   nav .hamburger-lay .hamburger .bar {
     width: 1.563rem;
@@ -337,7 +357,7 @@ img {
   }
 }
 @media (max-width: 37.5rem) {
-  .text{
+  .text {
     font-size: 10px;
   }
   .details {
@@ -388,7 +408,7 @@ img {
     padding-left: 0;
   }
 }
-b{
+b {
   white-space: nowrap;
 }
 @media (max-width: 31.25rem) {
@@ -417,5 +437,4 @@ b{
     font-size: 0.9rem;
     transition: 1s;
   }
-  
 }
