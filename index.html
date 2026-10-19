@@ -3,143 +3,622 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet"> -->
+    <title>Aryan Goyal — Full-stack developer</title>
+    <meta
+      name="description"
+      content="Aryan Goyal is a full-stack developer in Roorkee building interfaces, sensor-driven prototypes and AI tools. Currently at SDSLabs and Tinkering Labs."
+    />
+    <meta name="theme-color" content="#0b0a09" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aryan Goyal — Full-stack developer" />
+    <meta
+      property="og:description"
+      content="Interfaces, sensor-driven prototypes and AI tools. Full-stack developer at SDSLabs and Tinkering Labs."
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aryan Goyal",
+        "jobTitle": "Full-stack developer",
+        "email": "goyal.aryan@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Roorkee", "addressCountry": "IN" },
+        "sameAs": [
+          "https://github.com/Aryan-Go",
+          "https://www.linkedin.com/in/aryan-goyal-81875b203/",
+          "https://www.instagram.com/aryangoyal313/"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <!-- <h1 class="title">Aryan Goyal</h1> -->
-    <nav>
-      <div class="hamburger-lay">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </label>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="sites.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <div class="field" aria-hidden="true">
+      <div class="field__plates">
+        <img src="images/opt/mira.webp" alt="" decoding="async" />
+        <img src="images/opt/torque.webp" alt="" decoding="async" />
       </div>
-      <img class="flash" src="./images/flash.png" />
-    </nav>
-    <div class="photo">
-      <div class="text">
-        <h1>Hello Everybody, Aryan Goyal side</h1>
-        <p class="nov">
-          I'm a front-end developer passionate about creating
-          user-friendly websites, with a love for music (guitar and keyboard)
-          and sports, driving my creativity and growth in coding, music, and
-          physical activity.
-        </p>
-      </div>
-      <img class="me" src="./images/me.png" />
+      <canvas class="field__canvas" id="field"></canvas>
+      <div class="field__scrim"></div>
+      <div class="grain"></div>
     </div>
-    <div>
-      <h1>What am I doing right now??</h1>
-      <div>
-        <div class="photo">
-          <div class="text">
-            <h2>SDSLabs</h2>
-            <p class="nov">
-              I joined as a full-stack web developer at SDSLabs in February
-              2025, working on diverse projects to master front-end and back-end
-              development and create impactful, meaningful solutions.
-            </p>
-          </div>
-          <a href="https://sdslabs.co" target="_blank" rel="noopener noreferrer"
-            ><img
-              class="sds"
-              src="https://pbs.twimg.com/ext_tw_video_thumb/1317467996869128192/pu/img/qEJBxmjWRRzKVDmH?format=jpg&name=large"
-          /></a>
+
+    <div class="progress" id="progress" aria-hidden="true">
+      <span class="progress__bar" id="progress-bar"></span>
+    </div>
+
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <div class="cursor__ring" id="cursor-ring"></div>
+      <div class="cursor__dot" id="cursor-dot"></div>
+      <div class="cursor__glow" id="cursor-glow"></div>
+      <div class="cursor__label" id="cursor-label">Open</div>
+    </div>
+
+    <div class="shell">
+      <aside class="rail">
+        <p class="rail__top">
+          <span class="rail__pulse" aria-hidden="true"></span>
+          <span class="label label--ember">Open to work</span>
+        </p>
+
+        <div class="rail__id">
+          <p class="rail__name">Aryan<br /><em>Goyal</em></p>
+          <p class="rail__role">Full-stack developer · Roorkee, IN</p>
+          <p class="rail__blurb">
+            Sensor rigs, product interfaces, and whatever the hackathon asks for. I like software
+            that reacts to the person using it.
+          </p>
         </div>
 
-        <div class="photo">
-          <div class="text">
-            <h2>Tinkering Labs</h2>
-            <p class="nov">
-              As a software developer at Tinkering Labs, I work on
-              exciting projects involving drones, motion sensors, and AR/VR
-              technologies, expanding my skills in both traditional and
-              immersive tech.
-            </p>
-          </div>
-          <a
-            href="https://tinkeringlab.iitr.ac.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-              class="tl"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSsVby6sXkx6osxGmhbrybfX5gC9uuWKwecQ&s"
-          /></a>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h1>Few Achievments</h1>
-      <div>
-        <div class="photo">
-          <a
-            href="https://www.instagram.com/p/DFWos78SyzC/?img_index=3"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img class="mira" src="./images/mira.png"
-          /></a>
-          <div class="text">
-            <h2 class="hh">My 1st hackthon win</h2>
-            <p class="nov2">
-              <b>Winning my first hackathon</b> The MIRA Hackathon, fueled my
-              passion for innovation and motivated me to keep pushing forward in
-              tech through teamwork, problem-solving, and tight deadlines.
-            </p>
-          </div>
+        <nav class="rail__nav" aria-label="Sections">
+          <ol>
+            <li>
+              <a href="#signal" data-nav="signal"><span>01</span> Signal <i aria-hidden="true">◆</i></a>
+            </li>
+            <li>
+              <a href="#work" data-nav="work"><span>02</span> Work <i aria-hidden="true">◆</i></a>
+            </li>
+            <li>
+              <a href="#record" data-nav="record"><span>03</span> Record <i aria-hidden="true">◆</i></a>
+            </li>
+            <li>
+              <a href="#contact" data-nav="contact"><span>04</span> Contact <i aria-hidden="true">◆</i></a>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="rail__readout">
+          <dl>
+            <dt>Depth</dt>
+            <dd id="readout-depth">0000</dd>
+          </dl>
+          <dl>
+            <dt>Local</dt>
+            <dd id="readout-time">--:--</dd>
+          </dl>
+          <svg
+            class="rail__meter"
+            viewBox="0 0 120 22"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path id="meter" d="M0 11 L120 11" />
+          </svg>
+          <button class="motion" id="motion-toggle" type="button">
+            Motion: <b id="motion-state" aria-live="polite">full</b>
+          </button>
         </div>
 
-        <div class="photo">
-      <a
-        href="https://github.com/Aryan-Go/paac-web"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><img src="./images/paac.png" class="paac" id="paac2"
-      /></a>
-      <div class="text">
-        <h1 class="hh">PAAC website</h1>
-        <p class="nov2">
-          Creating the PAAC site and being one of only 9 students selected out of hundreds validated my hard work and motivated me to continue growing as a
-          developer.
-        </p>
-      </div>
+        <div class="rail__social">
+          <a href="https://github.com/Aryan-Go" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/aryan-goyal-81875b203/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://www.instagram.com/aryangoyal313/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+          <a href="mailto:goyal.aryan@gmail.com">Email</a>
+        </div>
+      </aside>
+
+      <main id="main">
+        <section class="section" id="signal" aria-labelledby="signal-title">
+          <div class="hero">
+            <div class="hero__body">
+              <p class="hero__eyebrow">Aryan Goyal · Full-stack developer</p>
+              <h1 class="hero__title" id="signal-title">
+                I build interfaces that <em>answer back</em>.
+              </h1>
+              <p class="hero__lead">
+                I work at the seam between design and engineering. Sensor rigs and immersive
+                prototypes at Tinkering Labs, product interfaces at SDSLabs, and a hackathon habit of
+                shipping something real before the deadline runs out.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#work">
+                  See the work <span class="btn__mark" aria-hidden="true">→</span>
+                </a>
+                <a class="btn btn--ghost" href="#contact">
+                  Get in touch <span class="btn__mark" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero__stack">
+              <div class="hero__frame" id="hero-frame">
+                <figure class="hero__photo">
+                  <img
+                    src="images/opt/me.webp"
+                    width="1100"
+                    height="1467"
+                    alt="Aryan Goyal"
+                    fetchpriority="high"
+                    decoding="async"
+                  />
+                </figure>
+                <span class="hero__tag hero__tag--1">Front-end</span>
+                <span class="hero__tag hero__tag--2">AR / VR</span>
+                <span class="hero__tag hero__tag--3">Sensors</span>
+              </div>
+
+              <div class="term" aria-hidden="true">
+                <div class="term__bar">
+                  <span class="term__dot term__dot--r"></span>
+                  <span class="term__dot term__dot--y"></span>
+                  <span class="term__dot term__dot--g"></span>
+                  <span class="term__title">bash — aryan@portfolio</span>
+                </div>
+                <div class="term__body">
+                  <p class="term__line"><span class="prompt">$</span> whoami</p>
+                  <p class="term__line">aryan_goyal — full-stack developer</p>
+                  <p class="term__line"><span class="prompt">$</span> ls ./skills</p>
+                  <p class="term__line"><span class="hl">web/</span> <span class="hl">sensors/</span> <span class="hl">ar-vr/</span> <span class="hl">ai/</span> <span class="hl">drones/</span></p>
+                  <p class="term__line"><span class="prompt">$</span> python train.py --epochs 10k</p>
+                  <p class="term__line"><span class="ok">✓</span> loss 0.0001 · <span class="ok">accuracy 99.98%</span></p>
+                  <p class="term__line"><span class="prompt">$</span> ./deploy.sh --env prod</p>
+                  <p class="term__line"><span class="ok">✓ build passed</span> · <span class="ok">✓ tests green</span> · <span class="live">● live</span></p>
+                  <p class="term__line term__line--caret"><span class="prompt">$</span><span class="term__caret"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats" aria-label="Key numbers">
+            <div class="stats__item reveal">
+              <span class="stats__num num" data-count="05">05</span>
+              <span class="stats__label">Artifacts shipped</span>
+            </div>
+            <div class="stats__item reveal">
+              <span class="stats__num num" data-count="02">02</span>
+              <span class="stats__label">Teams shipping</span>
+            </div>
+            <div class="stats__item reveal">
+              <span class="stats__num num" data-count="09">09</span>
+              <span class="stats__label">Selected of 100s</span>
+            </div>
+            <div class="stats__item reveal">
+              <span class="stats__num num" data-count="03" data-suffix="+">03</span>
+              <span class="stats__label">Hackathons played</span>
+            </div>
+          </div>
+
+          <div class="telemetry" aria-hidden="true">
+            <div class="telemetry__track">
+              <div class="telemetry__group">
+                <span>Full-stack</span><span>Front-end</span><span>Motion sensors</span
+                ><span>AR / VR</span><span>Drones</span><span>AI tools</span
+                ><span>Hackathon builder</span><span>Guitar &amp; keyboard</span>
+              </div>
+              <div class="telemetry__group">
+                <span>Full-stack</span><span>Front-end</span><span>Motion sensors</span
+                ><span>AR / VR</span><span>Drones</span><span>AI tools</span
+                ><span>Hackathon builder</span><span>Guitar &amp; keyboard</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about" style="margin-top: var(--s8)">
+            <div class="about__body">
+              <p class="label" style="margin-bottom: var(--s5)">The short version</p>
+              <p>
+                <span class="dropcap">I</span>'m Aryan. I like building things that react to the
+                people using them, which is a polite way of saying I got hooked on the moment an
+                interface does something you did not expect and it still feels obvious.
+              </p>
+              <p>
+                I started at the front end because I wanted to control how something
+                <strong>feels</strong>, not only whether it works. That pulled me through the rest of
+                the stack. At <strong>SDSLabs</strong> I have been shipping across it since February
+                2025, and at <strong>Tinkering Labs</strong> I write software for drones, motion
+                sensors and AR/VR rigs.
+              </p>
+              <p>
+                Hackathons are where I test speed. I have won a few, lost more, and learned that a
+                working demo beats a perfect plan. Away from the keyboard it is guitar, keyboard, and
+                sport.
+              </p>
+              <blockquote class="about__quote">
+                Make it work. Then make it feel like it was always supposed to work that way.
+              </blockquote>
+            </div>
+
+            <div class="currently">
+              <div class="currently__head">
+                <span class="label">Currently</span>
+                <span class="label">2025 – now</span>
+              </div>
+              <div class="currently__item">
+                <p class="currently__when">Feb 2025</p>
+                <div>
+                  <h3 class="currently__org">SDSLabs</h3>
+                  <p class="currently__note">
+                    Full-stack web developer. Working across the stack on products that go out to
+                    real users, and learning how much of the job is deciding what not to build.
+                  </p>
+                </div>
+              </div>
+              <div class="currently__item">
+                <p class="currently__when">2025</p>
+                <div>
+                  <h3 class="currently__org">Tinkering Labs</h3>
+                  <p class="currently__note">
+                    Software developer on drone, motion-sensor and AR/VR projects. Traditional and
+                    immersive tech, usually in the same afternoon.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="work" aria-labelledby="work-title">
+          <div class="section__head">
+            <p class="label">02 / Work</p>
+            <h2 id="work-title">Things I shipped</h2>
+            <span class="section__rule" aria-hidden="true"></span>
+          </div>
+
+          <p class="logline">
+            <span class="ok">✓</span> <span class="tag">5 artifacts</span> ·
+            <span class="tag">3 hackathons</span> · status: <span class="ok">● deployed</span>
+          </p>
+
+          <div class="work">
+            <article class="work__row reveal">
+              <div class="work__body">
+                <p class="work__idx num">001</p>
+                <h3 class="work__title">
+                  <a href="https://github.com/Aryan-Go/paac-web" target="_blank" rel="noopener noreferrer"
+                    >PAAC website</a
+                  >
+                </h3>
+                <p class="work__desc">
+                  Selected to design and build the PAAC site with a small team of nine, from a field
+                  of hundreds of applicants. My first lesson in shipping something an entire
+                  organisation depends on.
+                </p>
+                <ul class="tags">
+                  <li>Front-end</li>
+                  <li>Team of 9</li>
+                </ul>
+                <p class="work__link">
+                  <span>View repository</span><span aria-hidden="true">→</span>
+                </p>
+              </div>
+              <div class="work__media" data-tilt data-cursor="Open">
+                <div class="tilt">
+                  <img
+                    src="images/opt/paac.webp"
+                    width="1400"
+                    height="799"
+                    alt="Screenshot of the PAAC website"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tilt__ink" aria-hidden="true"></span>
+                  <span class="tilt__glide" aria-hidden="true"></span>
+                  <span class="tilt__frame" aria-hidden="true"></span>
+                  <span class="tilt__badge" aria-hidden="true">Open repository</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="work__row is-flipped reveal">
+              <div class="work__body">
+                <p class="work__idx num">002</p>
+                <h3 class="work__title">
+                  <a
+                    href="https://github.com/Aryan-Go/minify-project-MAIN-TEAM-AICOD-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >MIRIFY</a
+                  >
+                </h3>
+                <p class="work__desc">
+                  An AI music-generation tool built for the Miraculous Hackathon. Text and mood in,
+                  listenable music out, and a winning demo at the end of it. Also the project that
+                  convinced me generated audio is a design problem.
+                </p>
+                <ul class="tags">
+                  <li>AI</li>
+                  <li>Audio</li>
+                  <li>Hackathon</li>
+                </ul>
+                <p class="work__link">
+                  <span>View repository</span><span aria-hidden="true">→</span>
+                </p>
+              </div>
+              <div class="work__media" data-tilt data-cursor="Open">
+                <div class="tilt">
+                  <img
+                    src="images/opt/mirify.webp"
+                    width="1400"
+                    height="791"
+                    alt="Screenshot of the MIRIFY music-generation app"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tilt__ink" aria-hidden="true"></span>
+                  <span class="tilt__glide" aria-hidden="true"></span>
+                  <span class="tilt__frame" aria-hidden="true"></span>
+                  <span class="tilt__badge" aria-hidden="true">Open repository</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="work__row work__row--text reveal">
+              <div class="work__body">
+                <p class="work__idx num">003</p>
+                <h3 class="work__title">
+                  <a href="https://github.com/SiddharthChopra28/anacondas" target="_blank" rel="noopener noreferrer"
+                    >JEE Buddy</a
+                  >
+                </h3>
+                <p class="work__desc">
+                  My first hackathon build: a study platform for JEE candidates, put together by a
+                  team of three in the time most people spend sleeping. It taught me what a deadline
+                  does to your standards, and that shipping is a skill of its own.
+                </p>
+              </div>
+              <div class="work__aside">
+                <ul class="tags">
+                  <li>Edtech</li>
+                  <li>First hackathon</li>
+                </ul>
+                <p class="work__link">
+                  <span>View repository</span><span aria-hidden="true">→</span>
+                </p>
+              </div>
+            </article>
+
+            <article class="work__row reveal">
+              <div class="work__body">
+                <p class="work__idx num">004</p>
+                <h3 class="work__title">
+                  <a href="https://github.com/Aryan-Go/Torque_hackathon_project" target="_blank" rel="noopener noreferrer"
+                    >Jarvis</a
+                  >
+                </h3>
+                <p class="work__desc">
+                  A JEE study site with an assistant bolted straight into it, so you can ask a
+                  question mid-problem instead of leaving to go and search for it. Built and demoed
+                  inside the Torque hackathon.
+                </p>
+                <ul class="tags">
+                  <li>AI assistant</li>
+                  <li>Edtech</li>
+                </ul>
+                <p class="work__link">
+                  <span>View repository</span><span aria-hidden="true">→</span>
+                </p>
+              </div>
+              <div class="work__media" data-tilt data-cursor="Open">
+                <div class="tilt">
+                  <img
+                    src="images/opt/torque.webp"
+                    width="1400"
+                    height="649"
+                    alt="Screenshot of the Jarvis study app"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tilt__ink" aria-hidden="true"></span>
+                  <span class="tilt__glide" aria-hidden="true"></span>
+                  <span class="tilt__frame" aria-hidden="true"></span>
+                  <span class="tilt__badge" aria-hidden="true">Open repository</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="work__row is-flipped reveal">
+              <div class="work__body">
+                <p class="work__idx num">005</p>
+                <h3 class="work__title">
+                  <a href="https://github.com/Aryan-Go/trip_blockchain" target="_blank" rel="noopener noreferrer"
+                    >Mera Safar</a
+                  >
+                </h3>
+                <p class="work__desc">
+                  A decentralised auction where travellers bid for trip prices. My first honest look
+                  at what blockchains are actually good for, rather than what the pitch decks claim
+                  they are good for.
+                </p>
+                <ul class="tags">
+                  <li>Blockchain</li>
+                  <li>Auctions</li>
+                </ul>
+                <p class="work__link">
+                  <span>View repository</span><span aria-hidden="true">→</span>
+                </p>
+              </div>
+              <div class="work__media" data-tilt data-cursor="Open">
+                <div class="tilt">
+                  <img
+                    src="images/opt/mera_safar.webp"
+                    width="1400"
+                    height="797"
+                    alt="Screenshot of the Mera Safar blockchain auction app"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <span class="tilt__ink" aria-hidden="true"></span>
+                  <span class="tilt__glide" aria-hidden="true"></span>
+                  <span class="tilt__frame" aria-hidden="true"></span>
+                  <span class="tilt__badge" aria-hidden="true">Open repository</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="record" aria-labelledby="record-title">
+          <div class="section__head">
+            <p class="label">03 / Record</p>
+            <h2 id="record-title">What the record says</h2>
+            <span class="section__rule" aria-hidden="true"></span>
+          </div>
+
+          <p class="logline">
+            <span class="tag">$ git log --oneline -2</span> · all commits merged ·
+            <span class="ok">● clean</span>
+          </p>
+
+          <div class="record">
+            <div class="record__item reveal">
+              <p class="record__year"><span class="hash">commit 9d5896e</span>2025</p>
+              <div>
+                <h3 class="record__title">First hackathon win, MIRA</h3>
+                <p class="record__note">
+                  Took first place at the MIRA Hackathon with an AI music-generation tool. The first
+                  time a tight deadline worked in my favour instead of against me.
+                </p>
+              </div>
+              <div class="record__media">
+                <img
+                  src="images/opt/mira.webp"
+                  width="858"
+                  height="1370"
+                  alt="Aryan Goyal at the MIRA Hackathon"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+
+            <div class="record__item reveal">
+              <p class="record__year"><span class="hash">commit 46d42a6</span>2025</p>
+              <div>
+                <h3 class="record__title">Nine of hundreds, PAAC</h3>
+                <p class="record__note">
+                  Chosen as one of only nine students to build the PAAC website. The first time my
+                  work was measured against a real field rather than a rubric.
+                </p>
+              </div>
+              <div class="record__media">
+                <img
+                  src="images/opt/paac.webp"
+                  width="1400"
+                  height="799"
+                  alt="The PAAC website built by Aryan Goyal"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact" aria-labelledby="contact-title">
+          <div class="section__head">
+            <p class="label">04 / Contact</p>
+            <span class="section__rule" aria-hidden="true"></span>
+          </div>
+
+          <p class="logline">
+            <span class="tag">$ ./start-conversation.sh</span> · response time &lt; 24h
+          </p>
+
+          <h2 class="contact__title" id="contact-title">
+            Got something worth <em>building</em>?
+          </h2>
+
+          <div class="contact__grid">
+            <div>
+              <p style="max-width: var(--measure)">
+                I'm open to internships, freelance work and anything that needs someone who cares how
+                it feels as much as how it works. The fastest route is email.
+              </p>
+              <div class="mailto">
+                <a class="mailto__link" href="mailto:goyal.aryan@gmail.com">goyal.aryan@gmail.com</a>
+                <button class="copy" id="copy" type="button" data-email="goyal.aryan@gmail.com">
+                  <span id="copy-label">Copy address</span>
+                </button>
+              </div>
+            </div>
+
+            <form class="form" action="mailto:goyal.aryan@gmail.com" method="post" enctype="text/plain">
+              <h3 class="form__prompt">$ send_a_message</h3>
+              <div class="form__row">
+                <label for="from">Your name</label>
+                <input id="from" name="name" type="text" autocomplete="name" placeholder="Ada Lovelace" />
+              </div>
+              <div class="form__row">
+                <label for="msg">Message</label>
+                <textarea
+                  id="msg"
+                  name="message"
+                  required
+                  aria-describedby="form-hint"
+                  placeholder="What are you building?"
+                ></textarea>
+              </div>
+              <p class="form__hint" id="form-hint">
+                This opens your mail app with the message ready to send. Nothing is stored on this
+                page.
+              </p>
+              <button class="btn btn--primary" type="submit">
+                Send message <span class="btn__mark" aria-hidden="true">→</span>
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
     </div>
-    <div class="details">
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer"
-        ><img class="github" src="./images/github.svg"
-      /></a>
-      <a
-        href="https://www.linkedin.com/in/aryan-goyal-81875b203/"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><img class="linkedin" src="./images/linkedin.svg"
-      /></a>
-      <!-- <p>My instagram id = @aryangoyal313</p> -->
-      <a
-        href="https://www.instagram.com/aryangoyal313/"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><img src="./images/instagram.svg" class="insta"
-      /></a>
-      <a href="mailto:goyal.aryan@gmail.com"
-        ><img class="gmail" src="./images/mail.svg"
-      /></a>
-    </div>
+
+    <footer class="footer">
+      <p>
+        <span class="status-dot status-dot--ok" aria-hidden="true"></span> site online · uptime 99.98% ·
+        <span class="tag">$ exit 0</span>
+      </p>
+      <p>Designed and built by Aryan Goyal. Type: Space Grotesk, IBM Plex Sans, JetBrains Mono.</p>
+      <p>
+        <a href="https://github.com/Aryan-Go" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/aryan-goyal-81875b203/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+        <a href="https://www.instagram.com/aryangoyal313/" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+        <a href="mailto:goyal.aryan@gmail.com">Email</a>
+      </p>
+      <a class="totop" href="#signal">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+
+    <script src="app.js" defer></script>
   </body>
 </html>
